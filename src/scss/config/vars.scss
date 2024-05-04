@@ -1,0 +1,62 @@
+$siteResolution: 1px;
+$mainFont: 'Montserrat';
+$mainWeight: 400;
+$lineHeightMedium: 1.2;
+$lineHeightTitle: 1;
+$lineHeightDefault: $lineHeightMedium;
+
+$containerWidth: 1240rem;
+$containerWidthFluid: 1440rem;
+
+$gap: 20rem;
+$gapFluid: 40rem;
+
+$whiteColor: #f5f5f5;
+$blackColor: #000000;
+
+$fontFamily: $mainFont, Open Sans, sans-serif, Arial;
+$fontColor: $blackColor;
+$fontWeight: $mainWeight;
+
+$transition: all .4s 0ms;
+
+$radiusXs: 8rem;
+$radiusSm: 10rem;
+$radiusMg: 20rem;
+$radiusLg: 30rem;
+
+$headerSizeDesktop: 90rem;
+$headerSizeLg: 70rem;
+
+$xl: 1340px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+:root {
+  --fs-default: 16rem;
+  --fs-1: 70rem;
+  --fs-2: 46rem;
+  --fs-3: 24rem;
+  --fs-4: 16rem;
+  --fs-5: 16rem;
+  --fs-6: 16rem;
+  --fs-7: 14rem;
+  --fs-8: 12rem;
+  --gap: 20rem;
+  --gap-: -20rem;
+  --gap-fluid: 40rem;
+  --gap-fluid-: -40rem;
+  @media (max-width: $lg) {
+  }
+}

@@ -1,0 +1,1061 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="css/style.min.css??=v=20240504174818">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="static/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="static/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="static/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>Ecvida</title>
+  </head>
+  <body>
+    <div id="root" class="site">
+      <div class="site__inner">
+        <header class="header header--position-absolute header--theme-black js-header-sticky site__header">
+          <div class="container header__container">
+            <div class="row header__inner">
+              <div class="row__col--2 header__col d-lg-block header__col--appeal">
+                <div class="header__appeal">
+                  <button type="button" class="js-modal-form header__appeal-btn">Обсудить проект</button>
+                </div>
+              </div>
+              <div class="header__col header__col--nav row__col--3">
+                <div class="header__dropdown">
+                  <nav class="header__nav" role="navigation">
+                    <ul class="header__nav-list">
+                      <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Контакты</a>
+                      </li>
+                      <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Агентство</a>
+                      </li>
+                      <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Проекты</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="header__dropdown-footer">
+                    <div class="header__dropdown-contacts">
+                      <ul class="header__contacts">
+                        <li class="header__contacts-item">
+                          <div class="header__contacts-item-title">Т:</div>
+                          <div class="header__contacts-item-text">
+                            <a href="tel:+79272737276" target="_blank"> +7 (927) 273-72-76</a>
+                          </div>
+                        </li>
+                        <li class="header__contacts-item">
+                          <div class="header__contacts-item-title">А:</div>
+                          <div class="header__contacts-item-text">Москва, ул. 1-я Фрунзенская, 5, офис 5 </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="header__dropdown-copyright">© 2024. Impact Agency. Все права защищены.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row__col--2 header__col header__col--contacts">
+                <ul class="header__contacts">
+                  <li class="header__contacts-item">
+                    <div class="header__contacts-item-title">Т:</div>
+                    <div class="header__contacts-item-text">
+                      <a href="tel:+79272737276" target="_blank"> +7 (927) 273-72-76</a>
+                    </div>
+                  </li>
+                  <li class="header__contacts-item">
+                    <div class="header__contacts-item-title">А:</div>
+                    <div class="header__contacts-item-text">Москва, ул. 1-я Фрунзенская, 5, офис 5 </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="row__col--4 d-lg-block header__col header__col--toggle">
+                <button type="button" class="header__toggle js-header-toggle">
+                  <span class="header__toggle-icon">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#menu"></use>
+                    </svg>
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#close"></use>
+                    </svg>
+                  </span>
+                  <span class="header__toggle-text">
+                  <span class="header__toggle-title">Меню</span>
+                  <span class="header__toggle-title">Закрыть</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main role="main" class="site__main">
+          <section class="intro">
+            <div class="container intro__container">
+              <div class="intro__inner">
+                <h1 class="visually-hidden intro__title">Impact</h1>
+                <div class="row intro__row">
+                  <div class="row__col--7 intro__col intro__col--media">
+                    <div class="intro__media">
+                      <div class="intro__video"></div>
+                      <div class="intro-logo intro__logo">
+                        <picture class="intro-logo__letter">
+                          <img src="images/logo-letter-1.png">
+                        </picture>
+                        <picture class="intro-logo__letter">
+                          <img src="images/logo-letter-2.png">
+                        </picture>
+                        <picture class="intro-logo__letter">
+                          <img src="images/logo-letter-3.png">
+                        </picture>
+                        <picture class="intro-logo__letter">
+                          <img src="images/logo-letter-4.png">
+                        </picture>
+                        <picture class="intro-logo__letter">
+                          <img src="images/logo-letter-5.png">
+                        </picture>
+                        <picture class="intro-logo__letter">
+                          <img src="images/logo-letter-6.png">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row__col--5 intro__col intro__col--appeal">
+                    <div class="appeal-block intro__appeal">
+                      <h2 class="appeal-block__title">Интересно поработать с нами?</h2>
+                      <button type="button" class="appeal-block__btn btn-call btn-call--theme-gray" data-modal="popup-form">
+                      <span class="btn-call__title">Давайте обсудим</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row__col--2 intro__col intro__col--copyright">
+                    <p class="intro__copyright">© 2024. Impact Agency. Все права защищены.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="agency-section">
+            <div class="container agency-section__container">
+              <header class="row agency-section__header">
+                <div class="row__col--4 agency-section__header-col agency-section__header-col--title">
+                  <p class="agency-section__header-title">Агентство</p>
+                </div>
+                <div class="row__col--4 agency-section__header-col agency-section__header-col--appeal">
+                  <p class="agency-section__header-appeal">Мы — тот самый Impact, о котором все говорят. Просто разрабатываем сложные сайты, рисуем дизайн и анализируем.</p>
+                </div>
+              </header>
+              <div class="agency-section__main">
+                <div class="row agency-section__content">
+                  <div class="row__col--7 agency-section__content-col agency-section__content-col--title">
+                    <h2 class="title-size-1 agency-section__content-title">Чтобы предложить мощное цифровое присутствие брендам даем фокус на детали. Это позволяет нам создавать <a href="#" data-tooltip="Высококачественные впечатления">high-end experiences*</a>, объединяя инновации в дизайне и технологии.</h2>
+                  </div>
+                  <div class="row__col--2 agency-section__content-col agency-section__content-col--services">
+                    <article class="services-card agency-section__content-services">
+                      <div class="services-card__inner">
+                        <h3 class="services-card__title">Дизайн</h3>
+                        <ul class="services-card__list">
+                          <li>Концепт. дизайн</li>
+                          <li>UX/UI дизайн</li>
+                        </ul>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="row agency-section__services">
+                  <div class="agency-section__services-col agency-section__services-col--services row__col--7">
+                    <div class="row agency-section__services-row">
+                      <div class="row__col--4 agency-section__services-col">
+                        <article class="services-card agency-section__services-card">
+                          <div class="services-card__inner">
+                            <h3 class="services-card__title">Дизайн</h3>
+                            <ul class="services-card__list">
+                              <li>Концепт. дизайн</li>
+                              <li>UX/UI дизайн</li>
+                            </ul>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="row__col--4 agency-section__services-col">
+                        <article class="services-card agency-section__services-card">
+                          <div class="services-card__inner">
+                            <h3 class="services-card__title">Разработка</h3>
+                            <ul class="services-card__list">
+                              <li>Frontend / Backend</li>
+                              <li>Разработка приложений</li>
+                            </ul>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="row__col--4 agency-section__services-col">
+                        <article class="services-card agency-section__services-card">
+                          <div class="services-card__inner">
+                            <h3 class="services-card__title">Маркетинг</h3>
+                            <ul class="services-card__list">
+                              <li>Аналитика</li>
+                              <li>Поддержка</li>
+                            </ul>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="row__col--4 agency-section__services-col">
+                        <article class="services-card agency-section__services-card">
+                          <div class="services-card__inner">
+                            <h3 class="services-card__title">Промо</h3>
+                            <ul class="services-card__list">
+                              <li>Motion дизайн</li>
+                              <li>2D и 3D анимация</li>
+                            </ul>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="portfolio-section">
+            <div class="container portfolio-section__container">
+              <h2 class="visually-hidden portfolio-section__title">Наши работы</h2>
+              <div class="row portfolio-section__row">
+                <div class="row__col portfolio-section__col portfolio-section__col--size-1">
+                  <article class="portfolio-card portfolio-section__card">
+                    <div class="portfolio-card__inner">
+                      <div class="portfolio-card__media">
+                        <picture class="portfolio-card__picture">
+                          <source srcset="images/portfolio-card-1.webp" type="image/webp">
+                          <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="Agache.">
+                        </picture>
+                        <div class="portfolio-card__cover">
+                          <p class="portfolio-card__cover-title">Перейти на сайт</p>
+                        </div>
+                      </div>
+                      <div class="portfolio-card__content">
+                        <div class="row portfolio-card__row">
+                          <div class="row__col portfolio-card__col">
+                            <ul class="portfolio-card__list">
+                              <li>2024</li>
+                            </ul>
+                          </div>
+                          <div class="row__col portfolio-card__col">
+                            <ul class="portfolio-card__list">
+                              <li>
+                                <a href="#" target="_blank">Agache.</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="row__col portfolio-card__col">
+                            <ul class="portfolio-card__list">
+                              <li>Концепт. дизайн</li>
+                              <li>UX/UI дизайн</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="portfolio-card__icon">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col portfolio-section__col portfolio-section__col--size-2">
+                  <article class="portfolio-card portfolio-section__card">
+                    <div class="portfolio-card__inner">
+                      <div class="portfolio-card__media">
+                        <picture class="portfolio-card__picture">
+                          <source srcset="images/portfolio-card-2.webp" type="image/webp">
+                          <img src="images/portfolio-card-2.jpg" width="1254" height="940" alt="Nestvested">
+                        </picture>
+                        <div class="portfolio-card__cover">
+                          <p class="portfolio-card__cover-title">Перейти на сайт</p>
+                        </div>
+                      </div>
+                      <div class="portfolio-card__content">
+                        <div class="row portfolio-card__row">
+                          <div class="row__col portfolio-card__col">
+                            <ul class="portfolio-card__list">
+                              <li>2024</li>
+                            </ul>
+                          </div>
+                          <div class="row__col portfolio-card__col">
+                            <ul class="portfolio-card__list">
+                              <li>
+                                <a href="#" target="_blank">Nestvested</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="row__col portfolio-card__col">
+                            <ul class="portfolio-card__list">
+                              <li>Концепт. дизайн</li>
+                              <li>Frontend / Backend</li>
+                              <li>Поддержка</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="portfolio-card__icon">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col portfolio-section__col portfolio-section__col--size-2">
+                  <article class="portfolio-card portfolio-section__card">
+                    <div class="portfolio-card__inner">
+                      <div class="portfolio-card__media">
+                        <picture class="portfolio-card__picture">
+                          <source srcset="images/portfolio-card-3.webp" type="image/webp">
+                          <img src="images/portfolio-card-3.jpg" width="1254" height="940" alt="K72">
+                        </picture>
+                        <div class="portfolio-card__cover">
+                          <p class="portfolio-card__cover-title">Перейти на сайт</p>
+                        </div>
+                      </div>
+                      <div class="portfolio-card__content">
+                        <div class="row portfolio-card__row">
+                          <div class="row__col portfolio-card__col">
+                            <ul class="portfolio-card__list">
+                              <li>2024</li>
+                            </ul>
+                          </div>
+                          <div class="row__col portfolio-card__col">
+                            <ul class="portfolio-card__list">
+                              <li>
+                                <a href="#" target="_blank">K72</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="row__col portfolio-card__col">
+                            <ul class="portfolio-card__list">
+                              <li>Аналитика</li>
+                              <li>Frontend / Backend</li>
+                              <li>Поддержка</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="portfolio-card__icon">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="projects-section">
+            <div class="container projects-section__container">
+              <header class="row projects-section__header">
+                <div class="row__col projects-section__header-col projects-section__header-col--title">
+                  <h2 class="projects-section__title">Другие завершенные проекты</h2>
+                </div>
+              </header>
+              <div class="projects-list">
+                <header class="row projects-list__header">
+                  <div class="projects-list__col projects-list__col--year row__col--1">
+                    <p class="projects-list__suptitle">Год</p>
+                  </div>
+                  <div class="projects-list__col projects-list__col--client row__col--5">
+                    <p class="projects-list__suptitle">Клиент</p>
+                  </div>
+                  <div class="projects-list__col projects-list__col--services row__col--2">
+                    <p class="projects-list__suptitle">Услуга</p>
+                  </div>
+                </header>
+                <div class="projects-list__main">
+                  <div class="projects-list__main-card" data-year="2024">
+                    <div class="row projects-list__main-row">
+                      <div class="projects-list__col projects-list__col--year row__col--1">
+                        <p class="projects-list__text">2024</p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--client row__col--5">
+                        <p class="projects-list__text">
+                          <a href="#">Dropterra</a>
+                        </p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--services row__col--2">
+                        <div class="projects-list__services">
+                          <div class="projects-list__services-text">
+                            <p class="projects-list__text">Концепт. дизайн, Front-end</p>
+                          </div>
+                          <div class="projects-list__services-aside">
+                            <p class="projects-list__services-soon">cкоро</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row projects-list__main-row">
+                      <div class="projects-list__col projects-list__col--year row__col--1">
+                        <p class="projects-list__text">2024</p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--client row__col--5">
+                        <p class="projects-list__text">
+                          <a href="#" class="js-projects-card projects-list__link">Nestvested™</a>
+                        </p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--services row__col--2">
+                        <div class="projects-list__services">
+                          <div class="projects-list__services-text">
+                            <p class="projects-list__text">Back-end</p>
+                          </div>
+                          <div class="projects-list__services-aside">
+                            <svg class="u-icon projects-list__services-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="projects-list__main-card" data-year="2023">
+                    <div class="row projects-list__main-row">
+                      <div class="projects-list__col projects-list__col--year row__col--1">
+                        <p class="projects-list__text">2023</p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--client row__col--5">
+                        <p class="projects-list__text">
+                          <a href="#" class="js-projects-card projects-list__link">K72</a>
+                        </p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--services row__col--2">
+                        <div class="projects-list__services">
+                          <div class="projects-list__services-text">
+                            <p class="projects-list__text">Front-end, Back-end</p>
+                          </div>
+                          <div class="projects-list__services-aside">
+                            <svg class="u-icon projects-list__services-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row projects-list__main-row">
+                      <div class="projects-list__col projects-list__col--year row__col--1">
+                        <p class="projects-list__text">2023</p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--client row__col--5">
+                        <p class="projects-list__text">
+                          <a href="#" class="js-projects-card projects-list__link">ABIYA</a>
+                        </p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--services row__col--2">
+                        <div class="projects-list__services">
+                          <div class="projects-list__services-text">
+                            <p class="projects-list__text">Концепт. дизайн, Front-end, Back-end</p>
+                          </div>
+                          <div class="projects-list__services-aside">
+                            <svg class="u-icon projects-list__services-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row projects-list__main-row">
+                      <div class="projects-list__col projects-list__col--year row__col--1">
+                        <p class="projects-list__text">2023</p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--client row__col--5">
+                        <p class="projects-list__text">
+                          <a href="#" class="js-projects-card projects-list__link">Cannify Farma</a>
+                        </p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--services row__col--2">
+                        <div class="projects-list__services">
+                          <div class="projects-list__services-text">
+                            <p class="projects-list__text">Front-end, Back-end</p>
+                          </div>
+                          <div class="projects-list__services-aside">
+                            <svg class="u-icon projects-list__services-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row projects-list__main-row">
+                      <div class="projects-list__col projects-list__col--year row__col--1">
+                        <p class="projects-list__text">2023</p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--client row__col--5">
+                        <p class="projects-list__text">
+                          <a href="#" class="js-projects-card projects-list__link">Nestvested™</a>
+                        </p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--services row__col--2">
+                        <div class="projects-list__services">
+                          <div class="projects-list__services-text">
+                            <p class="projects-list__text">Концепт. дизайн, Front-end, Back-end</p>
+                          </div>
+                          <div class="projects-list__services-aside">
+                            <svg class="u-icon projects-list__services-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row projects-list__main-row">
+                      <div class="projects-list__col projects-list__col--year row__col--1">
+                        <p class="projects-list__text">2023</p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--client row__col--5">
+                        <p class="projects-list__text">
+                          <a href="#" class="js-projects-card projects-list__link">Dropterra</a>
+                        </p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--services row__col--2">
+                        <div class="projects-list__services">
+                          <div class="projects-list__services-text">
+                            <p class="projects-list__text">Back-end</p>
+                          </div>
+                          <div class="projects-list__services-aside">
+                            <svg class="u-icon projects-list__services-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row projects-list__main-row">
+                      <div class="projects-list__col projects-list__col--year row__col--1">
+                        <p class="projects-list__text">2023</p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--client row__col--5">
+                        <p class="projects-list__text">
+                          <a href="#" class="js-projects-card projects-list__link">K72</a>
+                        </p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--services row__col--2">
+                        <div class="projects-list__services">
+                          <div class="projects-list__services-text">
+                            <p class="projects-list__text">Front-end, Back-end</p>
+                          </div>
+                          <div class="projects-list__services-aside">
+                            <svg class="u-icon projects-list__services-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row projects-list__main-row">
+                      <div class="projects-list__col projects-list__col--year row__col--1">
+                        <p class="projects-list__text">2023</p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--client row__col--5">
+                        <p class="projects-list__text">
+                          <a href="#" class="js-projects-card projects-list__link">ABIYA</a>
+                        </p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--services row__col--2">
+                        <div class="projects-list__services">
+                          <div class="projects-list__services-text">
+                            <p class="projects-list__text">Концепт. дизайн, Front-end, Back-end</p>
+                          </div>
+                          <div class="projects-list__services-aside">
+                            <svg class="u-icon projects-list__services-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row projects-list__main-row">
+                      <div class="projects-list__col projects-list__col--year row__col--1">
+                        <p class="projects-list__text">2023</p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--client row__col--5">
+                        <p class="projects-list__text">
+                          <a href="#" class="js-projects-card projects-list__link">Dropterra</a>
+                        </p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--services row__col--2">
+                        <div class="projects-list__services">
+                          <div class="projects-list__services-text">
+                            <p class="projects-list__text">Back-end</p>
+                          </div>
+                          <div class="projects-list__services-aside">
+                            <svg class="u-icon projects-list__services-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row projects-list__main-row">
+                      <div class="projects-list__col projects-list__col--year row__col--1">
+                        <p class="projects-list__text">2023</p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--client row__col--5">
+                        <p class="projects-list__text">
+                          <a href="#" class="js-projects-card projects-list__link">Nestvested™</a>
+                        </p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--services row__col--2">
+                        <div class="projects-list__services">
+                          <div class="projects-list__services-text">
+                            <p class="projects-list__text">Front-end</p>
+                          </div>
+                          <div class="projects-list__services-aside">
+                            <svg class="u-icon projects-list__services-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row projects-list__main-row">
+                      <div class="projects-list__col projects-list__col--year row__col--1">
+                        <p class="projects-list__text">2023</p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--client row__col--5">
+                        <p class="projects-list__text">
+                          <a href="#" class="js-projects-card projects-list__link">ABIYA</a>
+                        </p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--services row__col--2">
+                        <div class="projects-list__services">
+                          <div class="projects-list__services-text">
+                            <p class="projects-list__text">Концепт. дизайн</p>
+                          </div>
+                          <div class="projects-list__services-aside">
+                            <svg class="u-icon projects-list__services-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="projects-list__main-card" data-year="2022">
+                    <div class="row projects-list__main-row">
+                      <div class="projects-list__col projects-list__col--year row__col--1">
+                        <p class="projects-list__text">2022</p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--client row__col--5">
+                        <p class="projects-list__text">
+                          <a href="#" class="js-projects-card projects-list__link">Nestvested™</a>
+                        </p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--services row__col--2">
+                        <div class="projects-list__services">
+                          <div class="projects-list__services-text">
+                            <p class="projects-list__text">Концепт. дизайн, Back-end</p>
+                          </div>
+                          <div class="projects-list__services-aside">
+                            <svg class="u-icon projects-list__services-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row projects-list__main-row">
+                      <div class="projects-list__col projects-list__col--year row__col--1">
+                        <p class="projects-list__text">2022</p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--client row__col--5">
+                        <p class="projects-list__text">
+                          <a href="#" class="js-projects-card projects-list__link">Agache.</a>
+                        </p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--services row__col--2">
+                        <div class="projects-list__services">
+                          <div class="projects-list__services-text">
+                            <p class="projects-list__text">Front-end, Back-end</p>
+                          </div>
+                          <div class="projects-list__services-aside">
+                            <svg class="u-icon projects-list__services-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row projects-list__main-row">
+                      <div class="projects-list__col projects-list__col--year row__col--1">
+                        <p class="projects-list__text">2022</p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--client row__col--5">
+                        <p class="projects-list__text">
+                          <a href="#" class="js-projects-card projects-list__link">Dropterra</a>
+                        </p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--services row__col--2">
+                        <div class="projects-list__services">
+                          <div class="projects-list__services-text">
+                            <p class="projects-list__text">Концепт. дизайн</p>
+                          </div>
+                          <div class="projects-list__services-aside">
+                            <svg class="u-icon projects-list__services-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row projects-list__main-row">
+                      <div class="projects-list__col projects-list__col--year row__col--1">
+                        <p class="projects-list__text">2022</p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--client row__col--5">
+                        <p class="projects-list__text">
+                          <a href="#" class="js-projects-card projects-list__link">Cannify Farma</a>
+                        </p>
+                      </div>
+                      <div class="projects-list__col projects-list__col--services row__col--2">
+                        <div class="projects-list__services">
+                          <div class="projects-list__services-text">
+                            <p class="projects-list__text">Front-end</p>
+                          </div>
+                          <div class="projects-list__services-aside">
+                            <svg class="u-icon projects-list__services-icon">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="js-projects-media projects-list__main-media">
+                    <div class="projects-list__main-media-card">
+                      <picture class="projects-list__main-media-picture">
+                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
+                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                      </picture>
+                    </div>
+                    <div class="projects-list__main-media-card">
+                      <picture class="projects-list__main-media-picture">
+                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
+                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                      </picture>
+                    </div>
+                    <div class="projects-list__main-media-card">
+                      <picture class="projects-list__main-media-picture">
+                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
+                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                      </picture>
+                    </div>
+                    <div class="projects-list__main-media-card">
+                      <picture class="projects-list__main-media-picture">
+                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
+                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                      </picture>
+                    </div>
+                    <div class="projects-list__main-media-card">
+                      <picture class="projects-list__main-media-picture">
+                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
+                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                      </picture>
+                    </div>
+                    <div class="projects-list__main-media-card">
+                      <picture class="projects-list__main-media-picture">
+                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
+                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                      </picture>
+                    </div>
+                    <div class="projects-list__main-media-card">
+                      <picture class="projects-list__main-media-picture">
+                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
+                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                      </picture>
+                    </div>
+                    <div class="projects-list__main-media-card">
+                      <picture class="projects-list__main-media-picture">
+                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
+                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                      </picture>
+                    </div>
+                    <div class="projects-list__main-media-card">
+                      <picture class="projects-list__main-media-picture">
+                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
+                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                      </picture>
+                    </div>
+                    <div class="projects-list__main-media-card">
+                      <picture class="projects-list__main-media-picture">
+                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
+                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                      </picture>
+                    </div>
+                    <div class="projects-list__main-media-card">
+                      <picture class="projects-list__main-media-picture">
+                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
+                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                      </picture>
+                    </div>
+                    <div class="projects-list__main-media-card">
+                      <picture class="projects-list__main-media-picture">
+                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
+                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                      </picture>
+                    </div>
+                    <div class="projects-list__main-media-card">
+                      <picture class="projects-list__main-media-picture">
+                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
+                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                      </picture>
+                    </div>
+                    <div class="projects-list__main-media-card">
+                      <picture class="projects-list__main-media-picture">
+                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
+                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                      </picture>
+                    </div>
+                    <div class="projects-list__main-media-card">
+                      <picture class="projects-list__main-media-picture">
+                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
+                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="footer site__footer">
+          <div class="container footer__container">
+            <div class="row footer__inner">
+              <div class="row__col--7 footer__col footer__col--media">
+                <div class="footer__media">
+                  <div class="footer__video"></div>
+                  <div class="intro-logo footer__logo">
+                    <picture class="intro-logo__letter">
+                      <img src="images/logo-letter-1.png">
+                    </picture>
+                    <picture class="intro-logo__letter">
+                      <img src="images/logo-letter-2.png">
+                    </picture>
+                    <picture class="intro-logo__letter">
+                      <img src="images/logo-letter-3.png">
+                    </picture>
+                    <picture class="intro-logo__letter">
+                      <img src="images/logo-letter-4.png">
+                    </picture>
+                    <picture class="intro-logo__letter">
+                      <img src="images/logo-letter-5.png">
+                    </picture>
+                    <picture class="intro-logo__letter">
+                      <img src="images/logo-letter-6.png">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="row__col--5 footer__col footer__col--appeal">
+                <div class="appeal-block footer__appeal">
+                  <h2 class="appeal-block__title">Интересно поработать с нами?</h2>
+                  <button type="button" class="appeal-block__btn btn-call btn-call--theme-gray js-modal-form" data-modal="popup-form">
+                  <span class="btn-call__title">Давайте обсудим</span>
+                  </button>
+                </div>
+              </div>
+              <div class="row__col--2 footer__col footer__col--copyright">
+                <p class="footer__copyright">© 2024. Impact Agency. Все права защищены.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div class="popup" data-popup="popup-form" data-close-overlay>
+        <div class="popup__wrapper" data-close-overlay>
+          <div class="popup__content popup__content--size-full popup__content--theme-white">
+            <div class="popup__inner">
+              <div class="popup__form">
+                <button type="button" class="js-popup-close btn-close btn-close--theme-black popup__btn-close">
+                  <svg class="u-icon btn-close__icon">
+                    <use xlink:href="images/icons/icons.svg#close"></use>
+                  </svg>
+                  <span class="btn-close__title">Закрыть</span>
+                </button>
+                <div class="row popup__form-row">
+                  <div class="popup__form-col popup__form-col--title row__col--3">
+                    <div class="title-size-1 popup__form-title">Давайте сделаем проект вместе</div>
+                  </div>
+                  <div class="row__col--4 popup__form-col popup__form-col--title">
+                    <form action="#" class="popup__form-el">
+                      <div class="popup__form-el-line">
+                        <p class="popup__form-el-line-title">Услуга</p>
+                        <div class="popup__form-el-control-list">
+                          <div class="popup__form-el-control-list-item">
+                            <label class="u-radio u-radio--size-md u-radio--theme-black">
+                            <span class="u-radio__inner">
+                            <input type="radio" name="form_services" class="u-radio__control" checked="checked" value="Дизайн">
+                            <span class="u-radio__content">
+                            <span class="u-radio__title">Дизайн</span>
+                            </span>
+                            </span>
+                            </label>
+                          </div>
+                          <div class="popup__form-el-control-list-item">
+                            <label class="u-radio u-radio--size-md u-radio--theme-black">
+                            <span class="u-radio__inner">
+                            <input type="radio" name="form_services" class="u-radio__control" value="Разработка">
+                            <span class="u-radio__content">
+                            <span class="u-radio__title">Разработка</span>
+                            </span>
+                            </span>
+                            </label>
+                          </div>
+                          <div class="popup__form-el-control-list-item">
+                            <label class="u-radio u-radio--size-md u-radio--theme-black">
+                            <span class="u-radio__inner">
+                            <input type="radio" name="form_services" class="u-radio__control" value="Маркетинг">
+                            <span class="u-radio__content">
+                            <span class="u-radio__title">Маркетинг</span>
+                            </span>
+                            </span>
+                            </label>
+                          </div>
+                          <div class="popup__form-el-control-list-item">
+                            <label class="u-radio u-radio--size-md u-radio--theme-black">
+                            <span class="u-radio__inner">
+                            <input type="radio" name="form_services" class="u-radio__control" value="Промо">
+                            <span class="u-radio__content">
+                            <span class="u-radio__title">Промо</span>
+                            </span>
+                            </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popup__form-el-line">
+                        <p class="popup__form-el-line-title">Бюджет</p>
+                        <div class="popup__form-el-control-list">
+                          <div class="popup__form-el-control-list-item">
+                            <label class="u-radio u-radio--size-md u-radio--theme-black">
+                            <span class="u-radio__inner">
+                            <input type="radio" name="form_budget" class="u-radio__control" value="До 100к">
+                            <span class="u-radio__content">
+                            <span class="u-radio__title">До 100к</span>
+                            </span>
+                            </span>
+                            </label>
+                          </div>
+                          <div class="popup__form-el-control-list-item">
+                            <label class="u-radio u-radio--size-md u-radio--theme-black">
+                            <span class="u-radio__inner">
+                            <input type="radio" name="form_budget" class="u-radio__control" checked="checked" value="100к–500к">
+                            <span class="u-radio__content">
+                            <span class="u-radio__title">100к–500к</span>
+                            </span>
+                            </span>
+                            </label>
+                          </div>
+                          <div class="popup__form-el-control-list-item">
+                            <label class="u-radio u-radio--size-md u-radio--theme-black">
+                            <span class="u-radio__inner">
+                            <input type="radio" name="form_budget" class="u-radio__control" value="500к+">
+                            <span class="u-radio__content">
+                            <span class="u-radio__title">500к+</span>
+                            </span>
+                            </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popup__form-el-line">
+                        <div class="row popup__form-el-row">
+                          <div class="row__col--4 popup__form-el-col">
+                            <div class="popup__form-el-input u-control">
+                              <input type="text" name="form_name" class="u-control__input u-input u-input--size-md u-input--theme-black u-input--status-error" required placeholder="">
+                              <p class="u-control__placeholder">
+                                <span class="u-control__placeholder-title">Имя</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row__col--4 popup__form-el-col">
+                            <div class="popup__form-el-input u-control">
+                              <input type="email" name="form_email" class="u-control__input u-input u-input--size-md u-input--theme-black" required placeholder="">
+                              <p class="u-control__placeholder">
+                                <span class="u-control__placeholder-title">E-mail</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popup__form-el-line">
+                        <div class="popup__form-el-input u-control">
+                          <textarea name="form_message" cols="" rows="1" class="u-control__input u-input u-input--size-md u-input--theme-black js-textarea-autoresizing u-input--type-textarea" placeholder=""></textarea>
+                          <p class="u-control__placeholder">
+                            <span class="u-control__placeholder-title">Детали проекта (по желанию)</span>
+                          </p>
+                        </div>
+                      </div>
+                      <footer class="popup__form-footer">
+                        <button type="submit" class="btn btn--size-md btn--theme-black popup__form-footer-btn">
+                        <span class="btn__inner">
+                        <span class="btn__title">Отправить</span>
+                        </span>
+                        </button>
+                        <div class="popup__form-footer-privacy">Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных</div>
+                      </footer>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" data-popup="popup-thanks" data-close-overlay>
+        <div class="popup__wrapper" data-close-overlay>
+          <div class="popup__content popup__content--size-full popup__content--theme-white">
+            <div class="popup__inner">
+              <div class="popup__info">
+                <button type="button" class="js-popup-close btn-close btn-close--theme-black popup__btn-close">
+                  <svg class="u-icon btn-close__icon">
+                    <use xlink:href="images/icons/icons.svg#close"></use>
+                  </svg>
+                  <span class="btn-close__title">Закрыть</span>
+                </button>
+                <div class="row popup__info-row">
+                  <div class="popup__info-col popup__info-col--title row__col--6">
+                    <div class="title-size-1 popup__info-title">Отлично!<br>Ваша заявка отправлена.<br>Мы свяжемся с вами в ближайшее время.</div>
+                    <button type="button" class="js-popup-close popup__info-close">Понятно, закрыть форму</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" data-popup="popup-error" data-close-overlay>
+        <div class="popup__wrapper" data-close-overlay>
+          <div class="popup__content popup__content--size-full popup__content--theme-white">
+            <div class="popup__inner">
+              <div class="popup__info">
+                <button type="button" class="js-popup-close btn-close btn-close--theme-black popup__btn-close">
+                  <svg class="u-icon btn-close__icon">
+                    <use xlink:href="images/icons/icons.svg#close"></use>
+                  </svg>
+                  <span class="btn-close__title">Закрыть</span>
+                </button>
+                <div class="row popup__info-row">
+                  <div class="popup__info-col popup__info-col--title row__col--6">
+                    <div class="title-size-1 popup__info-title">Кажется, что-то пошло не так...<br>Попробуйте отправить запрос чуть позже.</div>
+                    <button type="button" class="popup__info-close" data-modal="popup-form">Попробовать снова</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.min.js??=v=20240504174818"></script>
+  </body>
+</html>

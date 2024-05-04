@@ -1,0 +1,75 @@
+.popup {
+  background: rgba($blackColor, .7);
+  width: 100%;
+  width: 100vw;
+  padding: var(--gap-fluid);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition: all .4s ease-in-out;
+  transition-property: visibility, opacity;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 2000;
+  &:not(.is-open) {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    .popup__content {
+      transform: translateY(-20vh);
+      opacity: 0;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+  }
+  &__header {
+    background: rgba($pureWhiteColor, .6);
+    backdrop-filter: blur(15rem);
+    padding: 25rem 35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: $radiusSm;
+    @media (max-width: $md) {
+      padding: 25rem;
+    }
+    &-btn-close {
+      --indent: -15rem;
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+  }
+  &__content {
+    background: rgba($mediumGreyColor, .7);
+    backdrop-filter: blur(30rem);
+    width: 100%;
+    max-width: 480rem;
+    margin: 0 auto;
+    color: $blackColor;
+    border-radius: $radiusSm;
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    &--size {
+      &-md {
+        max-width: 760rem;
+      }
+      &-lg {
+        max-width: $containerWidth - 2 * $gapFluid;
+      }
+    }
+    &--theme {
+      &-gray {
+        background: rgba($mediumGreyColor, .7);
+        color: $blackColor;
+      }
+    }
+  }
+  &__inner {
+    padding: 40rem;
+  }
+}

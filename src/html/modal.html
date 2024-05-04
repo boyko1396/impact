@@ -1,0 +1,187 @@
+<div class="popup" data-popup="popup-form" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content popup__content--theme-white popup__content--size-full">
+      <div class="popup__inner">
+        <div class="popup__form">
+          <button type="button" class="js-popup-close btn-close btn-close--theme-black popup__btn-close">
+            <svg class="u-icon btn-close__icon">
+              <use xlink:href="images/icons/icons.svg#close"></use>
+            </svg>
+            <span class="btn-close__title">Закрыть</span>
+          </button>
+          <div class="row popup__form-row">
+            <div class="row__col--3 popup__form-col popup__form-col--title">
+              <div class="title-size-1 popup__form-title">Давайте сделаем проект вместе</div>
+            </div>
+            <div class="row__col--4 popup__form-col popup__form-col--title">
+              <form action="#" class="popup__form-el">
+                <div class="popup__form-el-line">
+                  <p class="popup__form-el-line-title">Услуга</p>
+                  <div class="popup__form-el-control-list">
+                    <div class="popup__form-el-control-list-item">
+                      <label class="u-radio u-radio--theme-black u-radio--size-md">
+                        <span class="u-radio__inner">
+                          <input type="radio" name="form_services" class="u-radio__control" checked value="Дизайн">
+                          <span class="u-radio__content">
+                            <span class="u-radio__title">Дизайн</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="popup__form-el-control-list-item">
+                      <label class="u-radio u-radio--theme-black u-radio--size-md">
+                        <span class="u-radio__inner">
+                          <input type="radio" name="form_services" class="u-radio__control" value="Разработка">
+                          <span class="u-radio__content">
+                            <span class="u-radio__title">Разработка</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="popup__form-el-control-list-item">
+                      <label class="u-radio u-radio--theme-black u-radio--size-md">
+                        <span class="u-radio__inner">
+                          <input type="radio" name="form_services" class="u-radio__control" value="Маркетинг">
+                          <span class="u-radio__content">
+                            <span class="u-radio__title">Маркетинг</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="popup__form-el-control-list-item">
+                      <label class="u-radio u-radio--theme-black u-radio--size-md">
+                        <span class="u-radio__inner">
+                          <input type="radio" name="form_services" class="u-radio__control" value="Промо">
+                          <span class="u-radio__content">
+                            <span class="u-radio__title">Промо</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="popup__form-el-line">
+                  <p class="popup__form-el-line-title">Бюджет</p>
+                  <div class="popup__form-el-control-list">
+                    <div class="popup__form-el-control-list-item">
+                      <label class="u-radio u-radio--theme-black u-radio--size-md">
+                        <span class="u-radio__inner">
+                          <input type="radio" name="form_budget" class="u-radio__control" value="До 100к">
+                          <span class="u-radio__content">
+                            <span class="u-radio__title">До 100к</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="popup__form-el-control-list-item">
+                      <label class="u-radio u-radio--theme-black u-radio--size-md">
+                        <span class="u-radio__inner">
+                          <input type="radio" name="form_budget" class="u-radio__control" checked value="100к–500к">
+                          <span class="u-radio__content">
+                            <span class="u-radio__title">100к–500к</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="popup__form-el-control-list-item">
+                      <label class="u-radio u-radio--theme-black u-radio--size-md">
+                        <span class="u-radio__inner">
+                          <input type="radio" name="form_budget" class="u-radio__control" value="500к+">
+                          <span class="u-radio__content">
+                            <span class="u-radio__title">500к+</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="popup__form-el-line">
+                  <div class="row popup__form-el-row">
+                    <div class="row__col--4 popup__form-el-col">
+                      <div class="u-control popup__form-el-input">
+                        <input type="text" name="form_name" class="u-input u-input--theme-black u-input--size-md u-input--status-error u-control__input" required placeholder="">
+                        <p class="u-control__placeholder">
+                          <span class="u-control__placeholder-title">Имя</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row__col--4 popup__form-el-col">
+                      <div class="u-control popup__form-el-input">
+                        <input type="email" name="form_email" class="u-input u-input--theme-black u-input--size-md u-control__input" required placeholder="">
+                        <p class="u-control__placeholder">
+                          <span class="u-control__placeholder-title">E-mail</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="popup__form-el-line">
+                  <div class="u-control popup__form-el-input">
+                    <textarea name="form_message" cols="" rows="1" class="js-textarea-autoresizing u-input u-input--theme-black u-input--size-md u-input--type-textarea u-control__input" placeholder=""></textarea>
+                    <p class="u-control__placeholder">
+                      <span class="u-control__placeholder-title">Детали проекта (по желанию)</span>
+                    </p>
+                  </div>
+                </div>
+                <footer class="popup__form-footer">
+                  <button type="submit" class="btn btn--theme-black btn--size-md popup__form-footer-btn">
+                    <span class="btn__inner">
+                      <span class="btn__title">Отправить</span>
+                    </span>
+                  </button>
+                  <div class="popup__form-footer-privacy">Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных</div>
+                </footer>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" data-popup="popup-thanks" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content popup__content--theme-white popup__content--size-full">
+      <div class="popup__inner">
+        <div class="popup__info">
+          <button type="button" class="js-popup-close btn-close btn-close--theme-black popup__btn-close">
+            <svg class="u-icon btn-close__icon">
+              <use xlink:href="images/icons/icons.svg#close"></use>
+            </svg>
+            <span class="btn-close__title">Закрыть</span>
+          </button>
+          <div class="row popup__info-row">
+            <div class="row__col--6 popup__info-col popup__info-col--title">
+              <div class="title-size-1 popup__info-title">Отлично!<br>Ваша заявка отправлена.<br>Мы свяжемся с вами в ближайшее время.</div>
+              <button type="button" class="js-popup-close popup__info-close">Понятно, закрыть форму</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" data-popup="popup-error" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content popup__content--theme-white popup__content--size-full">
+      <div class="popup__inner">
+        <div class="popup__info">
+          <button type="button" class="js-popup-close btn-close btn-close--theme-black popup__btn-close">
+            <svg class="u-icon btn-close__icon">
+              <use xlink:href="images/icons/icons.svg#close"></use>
+            </svg>
+            <span class="btn-close__title">Закрыть</span>
+          </button>
+          <div class="row popup__info-row">
+            <div class="row__col--6 popup__info-col popup__info-col--title">
+              <div class="title-size-1 popup__info-title">Кажется, что-то пошло не так...<br>Попробуйте отправить запрос чуть позже.</div>
+              <button type="button" class="popup__info-close" data-modal="popup-form">Попробовать снова</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
