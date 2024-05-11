@@ -1,0 +1,42 @@
+.portfolio-section {
+  padding: var(--gap-fluid) 0 var(--rhythm-11);
+  &__container {
+    overflow: hidden;
+  }
+  &__title {
+  }
+  &__row {
+    margin-bottom: calc(-1 * var(--rhythm-7));
+  }
+  &__col {
+    max-width: 37.5%;
+    margin-bottom: var(--rhythm-7);
+    flex-basis: 37.5%;
+    @media (max-width: $lg) {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
+    &--size {
+      &-1 {
+      }
+      &-2 {
+        max-width: 50%;
+        margin-left: $colWidth1;
+        flex-basis: 50%;
+        @media (max-width: $lg) {
+          max-width: 100%;
+          margin-left: 0;
+          flex-basis: 100%;
+        }
+        .portfolio-card__col {
+          @media (min-width: $sm-mf) {
+            max-width: 25%;
+            flex-basis: 25%;
+          }
+        }
+      }
+    }
+  }
+  &__card {
+  }
+}

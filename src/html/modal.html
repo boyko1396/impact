@@ -1,4 +1,4 @@
-<div class="popup" data-popup="popup-form" data-close-overlay>
+<div class="popup" data-popup="popup-form" data-close-overlay data-lenis-prevent>
   <div class="popup__wrapper" data-close-overlay>
     <div class="popup__content popup__content--theme-white popup__content--size-full">
       <div class="popup__inner">
@@ -13,7 +13,7 @@
             <div class="row__col--3 popup__form-col popup__form-col--title">
               <div class="title-size-1 popup__form-title">Давайте сделаем проект вместе</div>
             </div>
-            <div class="row__col--4 popup__form-col popup__form-col--title">
+            <div class="row__col--4 popup__form-col popup__form-col--form">
               <form action="#" class="popup__form-el">
                 <div class="popup__form-el-line">
                   <p class="popup__form-el-line-title">Услуга</p>
@@ -140,7 +140,7 @@
   </div>
 </div>
 
-<div class="popup" data-popup="popup-thanks" data-close-overlay>
+<div class="popup" data-popup="popup-thanks" data-close-overlay data-lenis-prevent>
   <div class="popup__wrapper" data-close-overlay>
     <div class="popup__content popup__content--theme-white popup__content--size-full">
       <div class="popup__inner">
@@ -153,8 +153,12 @@
           </button>
           <div class="row popup__info-row">
             <div class="row__col--6 popup__info-col popup__info-col--title">
-              <div class="title-size-1 popup__info-title">Отлично!<br>Ваша заявка отправлена.<br>Мы свяжемся с вами в ближайшее время.</div>
-              <button type="button" class="js-popup-close popup__info-close">Понятно, закрыть форму</button>
+              <div class="appeal-block popup__info-appeal">
+                <div class="title-size-1 appeal-block__title">Отлично!<br>Ваша заявка отправлена.<br>Мы свяжемся с вами в ближайшее время.</div>
+                <button type="button" class="js-popup-close btn-call btn-call--theme-gray appeal-block__btn">
+                  <span class="btn-call__title">Понятно, закрыть форму</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -163,7 +167,7 @@
   </div>
 </div>
 
-<div class="popup" data-popup="popup-error" data-close-overlay>
+<div class="popup" data-popup="popup-error" data-close-overlay data-lenis-prevent>
   <div class="popup__wrapper" data-close-overlay>
     <div class="popup__content popup__content--theme-white popup__content--size-full">
       <div class="popup__inner">
@@ -176,8 +180,12 @@
           </button>
           <div class="row popup__info-row">
             <div class="row__col--6 popup__info-col popup__info-col--title">
-              <div class="title-size-1 popup__info-title">Кажется, что-то пошло не так...<br>Попробуйте отправить запрос чуть позже.</div>
-              <button type="button" class="popup__info-close" data-modal="popup-form">Попробовать снова</button>
+              <div class="appeal-block popup__info-appeal">
+                <div class="title-size-1 appeal-block__title">Кажется, что-то пошло не так...<br>Попробуйте отправить запрос чуть позже.</div>
+                <button type="button" class="btn-call btn-call--theme-gray appeal-block__btn"  data-modal="popup-form">
+                  <span class="btn-call__title">Попробовать снова</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>

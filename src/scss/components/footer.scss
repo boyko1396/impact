@@ -1,2 +1,33 @@
 .footer {
+  padding: var(--rhythm-8) 0;
+  &__container {
+  }
+  &__inner {
+  }
+  &__col {
+    &--media {
+      margin-left: $colWidth1;
+    }
+    &--appeal {
+      margin-left: $colWidth1;
+      align-self: flex-end;
+    }
+    &--copyright {
+      align-self: flex-end;
+    }
+  }
+  &__media {
+    overflow: hidden;
+  }
+  &__video-mask {
+    margin: -450rem 0 -350rem;
+  }
+  &__footer {
+    &-row {
+    }
+  }
+  &__appeal {
+  }
+  &__copyright {
+  }
 }

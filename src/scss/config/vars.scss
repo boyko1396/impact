@@ -1,18 +1,24 @@
-$siteResolution: 1px;
-$mainFont: 'Montserrat';
-$mainWeight: 400;
-$lineHeightMedium: 1.2;
-$lineHeightTitle: 1;
+$siteResolutionDefault: 1px;
+$siteResolution: .05208333333vw;
+$siteResolutionXxl: .06944444444vw;
+$siteResolutionlg: .13020833333vw;
+$siteResolutionSm: .25641025641vw;
+$mainFont: 'PP Neue Montreal';
+$mainWeight: 500;
+$lineHeightSm: 1.2;
+$lineHeightMedium: 1.3;
+$lineHeightTitle: 1.33;
 $lineHeightDefault: $lineHeightMedium;
-
-$containerWidth: 1240rem;
-$containerWidthFluid: 1440rem;
 
 $gap: 20rem;
 $gapFluid: 40rem;
 
-$whiteColor: #f5f5f5;
-$blackColor: #000000;
+$colWidth1: 12.5%;
+
+$whiteColor: #ffffff;
+$blackColor: #171717;
+$grayColor: #E7E7E7;
+$redColor: #EE5050;
 
 $fontFamily: $mainFont, Open Sans, sans-serif, Arial;
 $fontColor: $blackColor;
@@ -20,13 +26,11 @@ $fontWeight: $mainWeight;
 
 $transition: all .4s 0ms;
 
-$radiusXs: 8rem;
-$radiusSm: 10rem;
-$radiusMg: 20rem;
-$radiusLg: 30rem;
+$xxmono: 1920px;
+$xxmono-mf: $xxmono + 1;
 
-$headerSizeDesktop: 90rem;
-$headerSizeLg: 70rem;
+$xxl: 1679px;
+$xxl-mf: $xxl + 1;
 
 $xl: 1340px;
 $xl-mf: $xl + 1;
@@ -44,19 +48,63 @@ $xs: 576px;
 $xs-mf: $xs + 1;
 
 :root {
-  --fs-default: 16rem;
-  --fs-1: 70rem;
-  --fs-2: 46rem;
-  --fs-3: 24rem;
-  --fs-4: 16rem;
-  --fs-5: 16rem;
-  --fs-6: 16rem;
-  --fs-7: 14rem;
-  --fs-8: 12rem;
-  --gap: 20rem;
-  --gap-: -20rem;
-  --gap-fluid: 40rem;
-  --gap-fluid-: -40rem;
+  --fs-default: 17rem;
+  --fs-1: 72rem;
+  --fs-2: 56rem;
+  --fs-3: 48rem;
+  --fs-4: 40rem;
+  --fs-5: 32rem;
+  --fs-6: 17rem;
+  --fs-6: 14rem;
+  --gap: 2rem;
+  --gap-: -2rem;
+  --gap2x: 4rem;
+  --gap2x-: -4rem;
+  --gap-fluid: 24rem;
+  --gap-fluid-: -24rem;
+
+  --rhythm-1: 10rem;
+  --rhythm-2: 30rem;
+  --rhythm-3: 4rem;
+  --rhythm-4: 24rem;
+  --rhythm-5: 96rem;
+  --rhythm-6: 8rem;
+  --rhythm-7: 144rem;
+  --rhythm-8: 48rem;
+  --rhythm-9: 32rem;
+  --rhythm-10: 42rem;
+  --rhythm-11: 120rem;
+
+  --scrollbar-width: 17px;
+  @media (max-width: $xxl) {
+    --fs-default: 14rem;
+    --fs-1: 56rem;
+    --fs-2: 40rem;
+    --fs-3: 40rem;
+
+    --rhythm-2: 20rem;
+    --rhythm-4: 16rem;
+    --rhythm-7: 96rem;
+    --rhythm-8: 32rem;
+    --rhythm-5: 64rem;
+    --rhythm-10: 32rem;
+    --rhythm-11: 80rem;
+
+    --gap-fluid: 16rem;
+    --gap-fluid-: -16rem;
+  }
   @media (max-width: $lg) {
+    --fs-1: 40rem;
+    --fs-2: 32rem;
+    --fs-3: 32rem;
+
+    --rhythm-5: 40rem;
+    --rhythm-7: 64rem;
+    --rhythm-11: 64rem;
+  }
+  @media (max-width: $sm) {
+    --fs-1: 32rem;
+    --fs-2: 24rem;
+    --fs-3: 24rem;
   }
 }

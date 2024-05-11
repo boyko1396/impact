@@ -4,14 +4,6 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 var(--gap-fluid);
-  &--size {
-    &-sm {
-      max-width: $containerWidth;
-    }
-    &-md {
-      max-width: $containerWidthFluid;
-    }
-  }
 }
 
 .row {
@@ -23,11 +15,11 @@
     min-height: 1rem;
     padding: 0 var(--gap);
     flex-shrink: 0;
-    @for $i from 1 through 12 {
+    @for $i from 1 through 8 {
       &--#{$i} {
         @extend .row__col;
-        max-width: percentage(math.div($i, 12));
-        flex-basis: percentage(math.div($i, 12));
+        max-width: percentage(math.div($i, 8));
+        flex-basis: percentage(math.div($i, 8));
       }
     }
   }

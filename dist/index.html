@@ -1,66 +1,51 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-    <link rel="stylesheet" href="css/style.min.css??=v=20240504174818">
-    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
-    <link rel="manifest" href="static/favicon/site.webmanifest">
-    <link rel="shortcut icon" href="static/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="static/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <title>Ecvida</title>
-  </head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="css/style.min.css??=v=20240511164109">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="static/favicon/site.webmanifest">
+  <link rel="shortcut icon" href="static/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="static/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#171717">
+  <title>Impact</title>
+</head>
   <body>
+
     <div id="root" class="site">
       <div class="site__inner">
-        <header class="header header--position-absolute header--theme-black js-header-sticky site__header">
-          <div class="container header__container">
-            <div class="row header__inner">
-              <div class="row__col--2 header__col d-lg-block header__col--appeal">
-                <div class="header__appeal">
-                  <button type="button" class="js-modal-form header__appeal-btn">Обсудить проект</button>
-                </div>
-              </div>
-              <div class="header__col header__col--nav row__col--3">
-                <div class="header__dropdown">
-                  <nav class="header__nav" role="navigation">
-                    <ul class="header__nav-list">
-                      <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Контакты</a>
-                      </li>
-                      <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Агентство</a>
-                      </li>
-                      <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Проекты</a>
-                      </li>
-                    </ul>
-                  </nav>
-                  <div class="header__dropdown-footer">
-                    <div class="header__dropdown-contacts">
-                      <ul class="header__contacts">
-                        <li class="header__contacts-item">
-                          <div class="header__contacts-item-title">Т:</div>
-                          <div class="header__contacts-item-text">
-                            <a href="tel:+79272737276" target="_blank"> +7 (927) 273-72-76</a>
-                          </div>
-                        </li>
-                        <li class="header__contacts-item">
-                          <div class="header__contacts-item-title">А:</div>
-                          <div class="header__contacts-item-text">Москва, ул. 1-я Фрунзенская, 5, офис 5 </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="header__dropdown-copyright">© 2024. Impact Agency. Все права защищены.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row__col--2 header__col header__col--contacts">
+        
+        <header class="header site__header">
+  <div class="container header__container">
+    <div class="row header__inner">
+      <div class="row__col--2 header__col header__col--appeal">
+        <div class="header__appeal">
+          <button type="button" class="header__appeal-btn js-modal-form" data-modal="popup-form">Обсудить проект</button>
+        </div>
+      </div>
+      <div class="header__col header__col--nav row__col--3">
+        <div class="header__dropdown" data-lenis-prevent>
+          <nav class="header__nav js-nav" role="navigation">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#contacts" class="header__nav-link">Контакты</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#agency" class="header__nav-link">Агентство</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#projects" class="header__nav-link">Проекты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="row header__dropdown-footer">
+            <div class="row__col--4 header__dropdown-footer-col header__dropdown-footer-col--contacts">
+              <div class="header__dropdown-contacts">
                 <ul class="header__contacts">
                   <li class="header__contacts-item">
                     <div class="header__contacts-item-title">Т:</div>
@@ -70,107 +55,128 @@
                   </li>
                   <li class="header__contacts-item">
                     <div class="header__contacts-item-title">А:</div>
-                    <div class="header__contacts-item-text">Москва, ул. 1-я Фрунзенская, 5, офис 5 </div>
+                    <div class="header__contacts-item-text">Москва, ул. 1-я Фрунзенская, 5, офис 5 </div>
                   </li>
                 </ul>
               </div>
-              <div class="row__col--4 d-lg-block header__col header__col--toggle">
-                <button type="button" class="header__toggle js-header-toggle">
-                  <span class="header__toggle-icon">
-                    <svg class="u-icon">
-                      <use xlink:href="images/icons/icons.svg#menu"></use>
-                    </svg>
-                    <svg class="u-icon">
-                      <use xlink:href="images/icons/icons.svg#close"></use>
-                    </svg>
-                  </span>
-                  <span class="header__toggle-text">
-                  <span class="header__toggle-title">Меню</span>
-                  <span class="header__toggle-title">Закрыть</span>
-                  </span>
+            </div>
+            <div class="row__col--4 header__dropdown-footer-col header__dropdown-footer-col--copyright">
+              <p class="header__dropdown-copyright">© 2024. Impact Agency. Все права защищены.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row__col--2 header__col header__col--contacts">
+        <ul class="header__contacts">
+          <li class="header__contacts-item">
+            <div class="header__contacts-item-title">Т:</div>
+            <div class="header__contacts-item-text">
+              <a href="tel:+79272737276" target="_blank"> +7 (927) 273-72-76</a>
+            </div>
+          </li>
+          <li class="header__contacts-item">
+            <div class="header__contacts-item-title">А:</div>
+            <div class="header__contacts-item-text">Москва, ул. 1-я Фрунзенская, 5, офис 5 </div>
+          </li>
+        </ul>
+      </div>
+      <div class="row__col--4 d-lg-block header__col header__col--toggle">
+        <button type="button" class="header__toggle js-header-toggle">
+          <span class="header__toggle-icon">
+            <svg class="u-icon">
+              <use xlink:href="images/icons/icons.svg#menu"></use>
+            </svg>
+            <svg class="u-icon">
+              <use xlink:href="images/icons/icons.svg#close"></use>
+            </svg>
+          </span>
+          <span class="header__toggle-text">
+            <span class="header__toggle-title">Меню</span>
+            <span class="header__toggle-title">Закрыть</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+        
+        <main role="main" class="site__main">
+          
+<section data-target="#contacts" id="contacts" class="intro">
+  <div class="container intro__container">
+    <div class="intro__inner">
+      <h1 class="visually-hidden intro__title">Impact</h1>
+      <div class="row intro__row">
+        <div class="intro__col intro__col--media row__col--7">
+          <div class="intro__video-mask video-mask video-mask--support">
+            <video class="video-mask__el" autoplay muted loop>
+              <source src="static/video/video-mask.mp4" type="video/mp4">
+              <source src="static/video/video-mask.webm" type="video/webm">
+            </video>
+            <svg width="1" height="1" viewBox="0 0 1 1" fill="none" xmlns="http://www.w3.org/2000/svg" class="video-mask__mask">
+              <clipPath id="svg-path" clipPathUnits="objectBoundingBox">
+                <path d="M0.975678 0.606478C0.964069 0.606478 0.95452 0.604787 0.947036 0.601404C0.939552 0.597761 0.933745 0.591776 0.929616 0.583449C0.925486 0.574863 0.923422 0.563023 0.923422 0.547931V0.436691H0.894775V0.405076H0.923422V0.341064H0.961357V0.405076H0.999292V0.436691H0.961357V0.549102C0.961357 0.556128 0.962004 0.561462 0.963294 0.565105C0.964839 0.568748 0.967164 0.57135 0.970258 0.572911C0.973358 0.574212 0.977743 0.574862 0.983422 0.574862C0.987811 0.574862 0.99323 0.574342 0.99968 0.573301V0.604136C0.991166 0.605697 0.983162 0.606478 0.975678 0.606478Z" fill="#171717" class="logo-title-letter logo-title-letter-6"/>
+                <path d="M0.809807 0.60994C0.790454 0.60994 0.773421 0.605516 0.758709 0.596669C0.744 0.587562 0.732646 0.575071 0.724647 0.559199C0.716644 0.543326 0.712646 0.525112 0.712646 0.504555C0.712646 0.483999 0.716644 0.465784 0.724647 0.449911C0.732646 0.433778 0.743873 0.421288 0.758321 0.412441C0.773034 0.403594 0.790067 0.39917 0.809419 0.39917C0.825937 0.39917 0.840646 0.402553 0.853549 0.409318C0.866452 0.415824 0.876776 0.425061 0.884515 0.43703C0.892259 0.44874 0.896904 0.462141 0.898453 0.477233H0.859356C0.858581 0.469427 0.856516 0.462011 0.853162 0.454985C0.849807 0.447959 0.844515 0.442235 0.837291 0.437811C0.830322 0.433128 0.821161 0.430786 0.809807 0.430786C0.796389 0.430786 0.785422 0.434168 0.776904 0.440934C0.768389 0.447699 0.762063 0.456676 0.757938 0.467865C0.754064 0.479055 0.752131 0.491284 0.752131 0.504555C0.752131 0.517825 0.754064 0.530056 0.757938 0.541244C0.762063 0.552173 0.768389 0.56102 0.776904 0.567786C0.785422 0.574551 0.796389 0.577934 0.809807 0.577934C0.821161 0.577934 0.830454 0.575722 0.837678 0.571298C0.844903 0.566615 0.850067 0.56076 0.853162 0.553735C0.856516 0.546448 0.858581 0.538642 0.859356 0.530316H0.898453C0.897678 0.545668 0.893421 0.559329 0.885677 0.571298C0.877938 0.583268 0.867487 0.592766 0.854324 0.599792C0.841161 0.606557 0.826325 0.60994 0.809807 0.60994Z" fill="#171717" class="logo-title-letter logo-title-letter-5"/>
+                <path d="M0.597364 0.609451C0.577491 0.609451 0.561749 0.604247 0.550135 0.593839C0.538522 0.583431 0.532715 0.569639 0.532715 0.552466C0.532715 0.538154 0.536074 0.526705 0.542783 0.518118C0.549492 0.509271 0.558654 0.502505 0.570267 0.497822C0.581881 0.492878 0.596844 0.488714 0.615167 0.485332C0.618266 0.484551 0.621621 0.4839 0.625235 0.48338C0.635039 0.481298 0.642523 0.479347 0.647687 0.477525C0.653107 0.475704 0.657364 0.473101 0.660459 0.469719C0.663558 0.466336 0.665103 0.461782 0.665103 0.456058C0.665103 0.447991 0.662136 0.441616 0.656202 0.436932C0.650522 0.431988 0.640974 0.429517 0.627555 0.429517C0.616202 0.429517 0.607168 0.430817 0.600459 0.43342C0.594009 0.435761 0.589233 0.439665 0.586138 0.445129C0.583298 0.450593 0.581493 0.457879 0.580718 0.466987H0.542008C0.543038 0.44643 0.550655 0.429907 0.564848 0.417417C0.579041 0.404927 0.600459 0.398682 0.629105 0.398682C0.651297 0.398682 0.668977 0.404146 0.682136 0.415075C0.695554 0.425744 0.702268 0.443178 0.702268 0.467377V0.55871C0.702268 0.566256 0.702911 0.571851 0.704201 0.575494C0.70575 0.578877 0.708203 0.580568 0.711557 0.580568C0.713107 0.580308 0.714652 0.580178 0.716202 0.580178V0.603596C0.708977 0.605158 0.702523 0.605938 0.696849 0.605938C0.68704 0.605938 0.679684 0.603727 0.674784 0.599303C0.66988 0.594619 0.66678 0.586813 0.665491 0.575884H0.664716C0.658007 0.586553 0.648977 0.594879 0.637619 0.600864C0.626265 0.606589 0.612847 0.609451 0.597364 0.609451ZM0.605878 0.578616C0.617232 0.578616 0.627428 0.576665 0.636461 0.572762C0.645491 0.568858 0.65246 0.563004 0.657364 0.555198C0.662523 0.547131 0.665103 0.537503 0.665103 0.526314V0.497822C0.662264 0.500424 0.656976 0.502895 0.649233 0.505237C0.641749 0.507579 0.632587 0.509921 0.621749 0.512263C0.60962 0.514605 0.599944 0.517467 0.592719 0.52085C0.58575 0.523972 0.580586 0.527876 0.577232 0.532559C0.573877 0.537243 0.5722 0.542968 0.5722 0.549733C0.5722 0.559361 0.574912 0.566647 0.580331 0.571591C0.58575 0.576275 0.594265 0.578616 0.605878 0.578616Z" fill="#171717" class="logo-title-letter logo-title-letter-4"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.438108 0.60955C0.423914 0.60955 0.411656 0.606817 0.401333 0.601353C0.391268 0.595888 0.382494 0.587741 0.376559 0.578634V0.673171H0.338623V0.405025H0.376559V0.429542C0.382752 0.421215 0.391655 0.413221 0.40172 0.407757C0.412043 0.402032 0.424172 0.39917 0.438108 0.39917C0.454881 0.39917 0.469977 0.403463 0.4834 0.412051C0.496819 0.420377 0.507397 0.432607 0.515141 0.44874C0.522881 0.464613 0.526755 0.483218 0.526755 0.504555C0.526755 0.525892 0.522881 0.544497 0.515141 0.56037C0.507397 0.576242 0.496819 0.588473 0.4834 0.597059C0.469977 0.605386 0.454881 0.60955 0.438108 0.60955ZM0.462106 0.568176C0.45385 0.574681 0.443785 0.577934 0.431914 0.577934C0.420559 0.577934 0.410752 0.574942 0.402495 0.568957C0.394236 0.562972 0.387913 0.554515 0.383526 0.543587C0.379139 0.532397 0.376559 0.519336 0.376559 0.504504C0.376559 0.489412 0.379139 0.476453 0.383526 0.465524C0.387913 0.454334 0.394236 0.445878 0.402495 0.440153C0.410752 0.434168 0.420559 0.431176 0.431914 0.431176C0.443785 0.431176 0.45385 0.434428 0.462106 0.440934C0.470624 0.447439 0.476819 0.456286 0.480688 0.467475C0.484818 0.478664 0.486882 0.491024 0.486882 0.504555C0.486882 0.517825 0.484818 0.530056 0.480688 0.541244C0.476819 0.552433 0.470624 0.561411 0.462106 0.568176Z" fill="#171717" class="logo-title-letter logo-title-letter-3"/>
+                <path d="M0.171675 0.476452C0.171675 0.46162 0.169223 0.450561 0.16432 0.443276C0.159675 0.43573 0.150642 0.431957 0.137223 0.431957C0.127933 0.431957 0.119803 0.434038 0.112836 0.438201C0.105868 0.442365 0.100449 0.44822 0.0965777 0.455766C0.0929647 0.463312 0.0911584 0.472029 0.0911584 0.481917V0.604085H0.0532227V0.405025H0.0911584V0.430375C0.0973516 0.421267 0.105997 0.413482 0.115545 0.407757C0.125094 0.402032 0.136707 0.39917 0.150384 0.39917C0.164062 0.39917 0.175158 0.402163 0.183675 0.408147C0.192191 0.413872 0.198513 0.422459 0.202642 0.433908H0.203417C0.211417 0.422979 0.220578 0.414522 0.230901 0.408538C0.241482 0.402293 0.253868 0.39917 0.268062 0.39917C0.287675 0.39917 0.302514 0.405025 0.312579 0.416734C0.322901 0.428184 0.328062 0.444576 0.328062 0.465914V0.604085H0.290127V0.476452C0.290127 0.46162 0.287675 0.450561 0.282772 0.443276C0.278127 0.43573 0.269095 0.431957 0.255675 0.431957C0.246385 0.431957 0.238255 0.434038 0.231288 0.438201C0.22432 0.442365 0.218901 0.44822 0.21503 0.455766C0.211417 0.463312 0.20961 0.472029 0.20961 0.481917V0.604085H0.171675V0.476452Z" fill="#171717" class="logo-title-letter logo-title-letter-2"/>
+                <path d="M0 0.324951H0.0425808V0.604026H0V0.324951Z" fill="#171717" class="logo-title-letter logo-title-letter-1"/>
+              </clipPath>
+            </svg>
+          </div>
+          <div class="intro__video-mask video-mask video-mask--no-support">
+            <svg width="1" height="1" viewBox="0 0 1 1" fill="none" xmlns="http://www.w3.org/2000/svg" class="video-mask__mask">
+              <path d="M0.975678 0.606478C0.964069 0.606478 0.95452 0.604787 0.947036 0.601404C0.939552 0.597761 0.933745 0.591776 0.929616 0.583449C0.925486 0.574863 0.923422 0.563023 0.923422 0.547931V0.436691H0.894775V0.405076H0.923422V0.341064H0.961357V0.405076H0.999292V0.436691H0.961357V0.549102C0.961357 0.556128 0.962004 0.561462 0.963294 0.565105C0.964839 0.568748 0.967164 0.57135 0.970258 0.572911C0.973358 0.574212 0.977743 0.574862 0.983422 0.574862C0.987811 0.574862 0.99323 0.574342 0.99968 0.573301V0.604136C0.991166 0.605697 0.983162 0.606478 0.975678 0.606478Z" fill="#171717" class="logo-title-letter logo-title-letter-6"/>
+              <path d="M0.809807 0.60994C0.790454 0.60994 0.773421 0.605516 0.758709 0.596669C0.744 0.587562 0.732646 0.575071 0.724647 0.559199C0.716644 0.543326 0.712646 0.525112 0.712646 0.504555C0.712646 0.483999 0.716644 0.465784 0.724647 0.449911C0.732646 0.433778 0.743873 0.421288 0.758321 0.412441C0.773034 0.403594 0.790067 0.39917 0.809419 0.39917C0.825937 0.39917 0.840646 0.402553 0.853549 0.409318C0.866452 0.415824 0.876776 0.425061 0.884515 0.43703C0.892259 0.44874 0.896904 0.462141 0.898453 0.477233H0.859356C0.858581 0.469427 0.856516 0.462011 0.853162 0.454985C0.849807 0.447959 0.844515 0.442235 0.837291 0.437811C0.830322 0.433128 0.821161 0.430786 0.809807 0.430786C0.796389 0.430786 0.785422 0.434168 0.776904 0.440934C0.768389 0.447699 0.762063 0.456676 0.757938 0.467865C0.754064 0.479055 0.752131 0.491284 0.752131 0.504555C0.752131 0.517825 0.754064 0.530056 0.757938 0.541244C0.762063 0.552173 0.768389 0.56102 0.776904 0.567786C0.785422 0.574551 0.796389 0.577934 0.809807 0.577934C0.821161 0.577934 0.830454 0.575722 0.837678 0.571298C0.844903 0.566615 0.850067 0.56076 0.853162 0.553735C0.856516 0.546448 0.858581 0.538642 0.859356 0.530316H0.898453C0.897678 0.545668 0.893421 0.559329 0.885677 0.571298C0.877938 0.583268 0.867487 0.592766 0.854324 0.599792C0.841161 0.606557 0.826325 0.60994 0.809807 0.60994Z" fill="#171717" class="logo-title-letter logo-title-letter-5"/>
+              <path d="M0.597364 0.609451C0.577491 0.609451 0.561749 0.604247 0.550135 0.593839C0.538522 0.583431 0.532715 0.569639 0.532715 0.552466C0.532715 0.538154 0.536074 0.526705 0.542783 0.518118C0.549492 0.509271 0.558654 0.502505 0.570267 0.497822C0.581881 0.492878 0.596844 0.488714 0.615167 0.485332C0.618266 0.484551 0.621621 0.4839 0.625235 0.48338C0.635039 0.481298 0.642523 0.479347 0.647687 0.477525C0.653107 0.475704 0.657364 0.473101 0.660459 0.469719C0.663558 0.466336 0.665103 0.461782 0.665103 0.456058C0.665103 0.447991 0.662136 0.441616 0.656202 0.436932C0.650522 0.431988 0.640974 0.429517 0.627555 0.429517C0.616202 0.429517 0.607168 0.430817 0.600459 0.43342C0.594009 0.435761 0.589233 0.439665 0.586138 0.445129C0.583298 0.450593 0.581493 0.457879 0.580718 0.466987H0.542008C0.543038 0.44643 0.550655 0.429907 0.564848 0.417417C0.579041 0.404927 0.600459 0.398682 0.629105 0.398682C0.651297 0.398682 0.668977 0.404146 0.682136 0.415075C0.695554 0.425744 0.702268 0.443178 0.702268 0.467377V0.55871C0.702268 0.566256 0.702911 0.571851 0.704201 0.575494C0.70575 0.578877 0.708203 0.580568 0.711557 0.580568C0.713107 0.580308 0.714652 0.580178 0.716202 0.580178V0.603596C0.708977 0.605158 0.702523 0.605938 0.696849 0.605938C0.68704 0.605938 0.679684 0.603727 0.674784 0.599303C0.66988 0.594619 0.66678 0.586813 0.665491 0.575884H0.664716C0.658007 0.586553 0.648977 0.594879 0.637619 0.600864C0.626265 0.606589 0.612847 0.609451 0.597364 0.609451ZM0.605878 0.578616C0.617232 0.578616 0.627428 0.576665 0.636461 0.572762C0.645491 0.568858 0.65246 0.563004 0.657364 0.555198C0.662523 0.547131 0.665103 0.537503 0.665103 0.526314V0.497822C0.662264 0.500424 0.656976 0.502895 0.649233 0.505237C0.641749 0.507579 0.632587 0.509921 0.621749 0.512263C0.60962 0.514605 0.599944 0.517467 0.592719 0.52085C0.58575 0.523972 0.580586 0.527876 0.577232 0.532559C0.573877 0.537243 0.5722 0.542968 0.5722 0.549733C0.5722 0.559361 0.574912 0.566647 0.580331 0.571591C0.58575 0.576275 0.594265 0.578616 0.605878 0.578616Z" fill="#171717" class="logo-title-letter logo-title-letter-4"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.438108 0.60955C0.423914 0.60955 0.411656 0.606817 0.401333 0.601353C0.391268 0.595888 0.382494 0.587741 0.376559 0.578634V0.673171H0.338623V0.405025H0.376559V0.429542C0.382752 0.421215 0.391655 0.413221 0.40172 0.407757C0.412043 0.402032 0.424172 0.39917 0.438108 0.39917C0.454881 0.39917 0.469977 0.403463 0.4834 0.412051C0.496819 0.420377 0.507397 0.432607 0.515141 0.44874C0.522881 0.464613 0.526755 0.483218 0.526755 0.504555C0.526755 0.525892 0.522881 0.544497 0.515141 0.56037C0.507397 0.576242 0.496819 0.588473 0.4834 0.597059C0.469977 0.605386 0.454881 0.60955 0.438108 0.60955ZM0.462106 0.568176C0.45385 0.574681 0.443785 0.577934 0.431914 0.577934C0.420559 0.577934 0.410752 0.574942 0.402495 0.568957C0.394236 0.562972 0.387913 0.554515 0.383526 0.543587C0.379139 0.532397 0.376559 0.519336 0.376559 0.504504C0.376559 0.489412 0.379139 0.476453 0.383526 0.465524C0.387913 0.454334 0.394236 0.445878 0.402495 0.440153C0.410752 0.434168 0.420559 0.431176 0.431914 0.431176C0.443785 0.431176 0.45385 0.434428 0.462106 0.440934C0.470624 0.447439 0.476819 0.456286 0.480688 0.467475C0.484818 0.478664 0.486882 0.491024 0.486882 0.504555C0.486882 0.517825 0.484818 0.530056 0.480688 0.541244C0.476819 0.552433 0.470624 0.561411 0.462106 0.568176Z" fill="#171717" class="logo-title-letter logo-title-letter-3"/>
+              <path d="M0.171675 0.476452C0.171675 0.46162 0.169223 0.450561 0.16432 0.443276C0.159675 0.43573 0.150642 0.431957 0.137223 0.431957C0.127933 0.431957 0.119803 0.434038 0.112836 0.438201C0.105868 0.442365 0.100449 0.44822 0.0965777 0.455766C0.0929647 0.463312 0.0911584 0.472029 0.0911584 0.481917V0.604085H0.0532227V0.405025H0.0911584V0.430375C0.0973516 0.421267 0.105997 0.413482 0.115545 0.407757C0.125094 0.402032 0.136707 0.39917 0.150384 0.39917C0.164062 0.39917 0.175158 0.402163 0.183675 0.408147C0.192191 0.413872 0.198513 0.422459 0.202642 0.433908H0.203417C0.211417 0.422979 0.220578 0.414522 0.230901 0.408538C0.241482 0.402293 0.253868 0.39917 0.268062 0.39917C0.287675 0.39917 0.302514 0.405025 0.312579 0.416734C0.322901 0.428184 0.328062 0.444576 0.328062 0.465914V0.604085H0.290127V0.476452C0.290127 0.46162 0.287675 0.450561 0.282772 0.443276C0.278127 0.43573 0.269095 0.431957 0.255675 0.431957C0.246385 0.431957 0.238255 0.434038 0.231288 0.438201C0.22432 0.442365 0.218901 0.44822 0.21503 0.455766C0.211417 0.463312 0.20961 0.472029 0.20961 0.481917V0.604085H0.171675V0.476452Z" fill="#171717" class="logo-title-letter logo-title-letter-2"/>
+              <path d="M0 0.324951H0.0425808V0.604026H0V0.324951Z" fill="#171717" class="logo-title-letter logo-title-letter-1"/>
+            </svg>
+          </div>
+        </div>
+        <footer class="intro__col intro__col--footer row__col--8">
+          <div class="row intro__footer">
+            <div class="row__col--5 intro__col intro__col--appeal">
+              <div class="appeal-block intro__appeal">
+                <h2 class="appeal-block__title title-size-2">Интересно поработать с нами?</h2>
+                <button type="button" class="appeal-block__btn btn-call btn-call--theme-gray" data-modal="popup-form">
+                  <span class="btn-call__title">Давайте обсудим</span>
                 </button>
               </div>
             </div>
-          </div>
-        </header>
-        <main role="main" class="site__main">
-          <section class="intro">
-            <div class="container intro__container">
-              <div class="intro__inner">
-                <h1 class="visually-hidden intro__title">Impact</h1>
-                <div class="row intro__row">
-                  <div class="row__col--7 intro__col intro__col--media">
-                    <div class="intro__media">
-                      <div class="intro__video"></div>
-                      <div class="intro-logo intro__logo">
-                        <picture class="intro-logo__letter">
-                          <img src="images/logo-letter-1.png">
-                        </picture>
-                        <picture class="intro-logo__letter">
-                          <img src="images/logo-letter-2.png">
-                        </picture>
-                        <picture class="intro-logo__letter">
-                          <img src="images/logo-letter-3.png">
-                        </picture>
-                        <picture class="intro-logo__letter">
-                          <img src="images/logo-letter-4.png">
-                        </picture>
-                        <picture class="intro-logo__letter">
-                          <img src="images/logo-letter-5.png">
-                        </picture>
-                        <picture class="intro-logo__letter">
-                          <img src="images/logo-letter-6.png">
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row__col--5 intro__col intro__col--appeal">
-                    <div class="appeal-block intro__appeal">
-                      <h2 class="appeal-block__title">Интересно поработать с нами?</h2>
-                      <button type="button" class="appeal-block__btn btn-call btn-call--theme-gray" data-modal="popup-form">
-                      <span class="btn-call__title">Давайте обсудим</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="row__col--2 intro__col intro__col--copyright">
-                    <p class="intro__copyright">© 2024. Impact Agency. Все права защищены.</p>
-                  </div>
-                </div>
-              </div>
+            <div class="row__col--2 intro__col intro__col--copyright">
+              <p class="intro__copyright">© 2024. Impact Agency. Все права защищены.</p>
             </div>
-          </section>
-          <section class="agency-section">
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</section>
+
+          
+          <section data-target="#agency" id="agency" class="agency-section">
             <div class="container agency-section__container">
               <header class="row agency-section__header">
                 <div class="row__col--4 agency-section__header-col agency-section__header-col--title">
                   <p class="agency-section__header-title">Агентство</p>
                 </div>
                 <div class="row__col--4 agency-section__header-col agency-section__header-col--appeal">
-                  <p class="agency-section__header-appeal">Мы — тот самый Impact, о котором все говорят. Просто разрабатываем сложные сайты, рисуем дизайн и анализируем.</p>
+                  <p class="agency-section__header-appeal">Мы — тот самый Impact, о котором&nbsp;все говорят. Просто разрабатываем сложные сайты, рисуем дизайн и анализируем.</p>
                 </div>
               </header>
               <div class="agency-section__main">
                 <div class="row agency-section__content">
                   <div class="row__col--7 agency-section__content-col agency-section__content-col--title">
-                    <h2 class="title-size-1 agency-section__content-title">Чтобы предложить мощное цифровое присутствие брендам даем фокус на детали. Это позволяет нам создавать <a href="#" data-tooltip="Высококачественные впечатления">high-end experiences*</a>, объединяя инновации в дизайне и технологии.</h2>
-                  </div>
-                  <div class="row__col--2 agency-section__content-col agency-section__content-col--services">
-                    <article class="services-card agency-section__content-services">
-                      <div class="services-card__inner">
-                        <h3 class="services-card__title">Дизайн</h3>
-                        <ul class="services-card__list">
-                          <li>Концепт. дизайн</li>
-                          <li>UX/UI дизайн</li>
-                        </ul>
-                      </div>
-                    </article>
+                    <h2 class="title-size-1 agency-section__content-title">Чтобы предложить мощное цифровое присутствие брендам даем фокус на детали. Это позволяет нам создавать <a href="#" data-tooltip="Высококачественные впечатления">high-end experiences*</a>, объединяя инновации в дизайне и технологии.</h2>
                   </div>
                 </div>
                 <div class="row agency-section__services">
-                  <div class="agency-section__services-col agency-section__services-col--services row__col--7">
-                    <div class="row agency-section__services-row">
-                      <div class="row__col--4 agency-section__services-col">
-                        <article class="services-card agency-section__services-card">
+                  <div class="row__col--4 agency-section__services-col agency-section__services-col--services">
+                    <div class="row agency-section__services-list">
+                      <div class="row__col--4 agency-section__services-list-col">
+                        <article class="agency-section__services-card services-card">
                           <div class="services-card__inner">
                             <h3 class="services-card__title">Дизайн</h3>
                             <ul class="services-card__list">
@@ -180,8 +186,8 @@
                           </div>
                         </article>
                       </div>
-                      <div class="row__col--4 agency-section__services-col">
-                        <article class="services-card agency-section__services-card">
+                      <div class="row__col--4 agency-section__services-list-col">
+                        <article class="agency-section__services-card services-card">
                           <div class="services-card__inner">
                             <h3 class="services-card__title">Разработка</h3>
                             <ul class="services-card__list">
@@ -191,8 +197,8 @@
                           </div>
                         </article>
                       </div>
-                      <div class="row__col--4 agency-section__services-col">
-                        <article class="services-card agency-section__services-card">
+                      <div class="row__col--4 agency-section__services-list-col">
+                        <article class="agency-section__services-card services-card">
                           <div class="services-card__inner">
                             <h3 class="services-card__title">Маркетинг</h3>
                             <ul class="services-card__list">
@@ -202,8 +208,8 @@
                           </div>
                         </article>
                       </div>
-                      <div class="row__col--4 agency-section__services-col">
-                        <article class="services-card agency-section__services-card">
+                      <div class="row__col--4 agency-section__services-list-col">
+                        <article class="agency-section__services-card services-card">
                           <div class="services-card__inner">
                             <h3 class="services-card__title">Промо</h3>
                             <ul class="services-card__list">
@@ -219,843 +225,831 @@
               </div>
             </div>
           </section>
-          <section class="portfolio-section">
-            <div class="container portfolio-section__container">
-              <h2 class="visually-hidden portfolio-section__title">Наши работы</h2>
-              <div class="row portfolio-section__row">
-                <div class="row__col portfolio-section__col portfolio-section__col--size-1">
-                  <article class="portfolio-card portfolio-section__card">
-                    <div class="portfolio-card__inner">
-                      <div class="portfolio-card__media">
-                        <picture class="portfolio-card__picture">
-                          <source srcset="images/portfolio-card-1.webp" type="image/webp">
-                          <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="Agache.">
-                        </picture>
-                        <div class="portfolio-card__cover">
-                          <p class="portfolio-card__cover-title">Перейти на сайт</p>
+          
+          <div data-target="#projects" id="projects">
+            
+            <section class="portfolio-section">
+              <div class="container portfolio-section__container">
+                <h2 class="visually-hidden portfolio-section__title">Наши работы</h2>
+                <div class="row portfolio-section__row">
+                  <div class="row__col portfolio-section__col portfolio-section__col--size-1">
+                    <article class="portfolio-card portfolio-section__card">
+                      <div class="portfolio-card__inner">
+                        <div class="portfolio-card__media">
+                          <picture class="portfolio-card__picture">
+                            
+                            <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="Agache.">
+                          </picture>
+                          <div class="portfolio-card__cover">
+                            <p class="portfolio-card__cover-title">Перейти на сайт</p>
+                          </div>
+                        </div>
+                        <div class="portfolio-card__content">
+                          <div class="portfolio-card__icon"></div>
+                          <div class="row portfolio-card__row">
+                            <div class="row__col portfolio-card__col">
+                              <ul class="portfolio-card__list">
+                                <li>2024</li>
+                              </ul>
+                            </div>
+                            <div class="row__col portfolio-card__col">
+                              <ul class="portfolio-card__list">
+                                <li>
+                                  <a href="#" target="_blank">Agache.</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="row__col portfolio-card__col">
+                              <ul class="portfolio-card__list">
+                                <li>Концепт. дизайн</li>
+                                <li>UX/UI дизайн</li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="portfolio-card__content">
-                        <div class="row portfolio-card__row">
-                          <div class="row__col portfolio-card__col">
-                            <ul class="portfolio-card__list">
-                              <li>2024</li>
-                            </ul>
-                          </div>
-                          <div class="row__col portfolio-card__col">
-                            <ul class="portfolio-card__list">
-                              <li>
-                                <a href="#" target="_blank">Agache.</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="row__col portfolio-card__col">
-                            <ul class="portfolio-card__list">
-                              <li>Концепт. дизайн</li>
-                              <li>UX/UI дизайн</li>
-                            </ul>
+                    </article>
+                  </div>
+                  <div class="row__col portfolio-section__col portfolio-section__col--size-2">
+                    <article class="portfolio-card portfolio-section__card">
+                      <div class="portfolio-card__inner">
+                        <div class="portfolio-card__media">
+                          <picture class="portfolio-card__picture">
+                            
+                            <img src="images/portfolio-card-2.jpg" width="1254" height="940" alt="Nestvested">
+                          </picture>
+                          <div class="portfolio-card__cover">
+                            <p class="portfolio-card__cover-title">Перейти на сайт</p>
                           </div>
                         </div>
-                        <div class="portfolio-card__icon">
-                          <svg class="u-icon">
-                            <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                <div class="row__col portfolio-section__col portfolio-section__col--size-2">
-                  <article class="portfolio-card portfolio-section__card">
-                    <div class="portfolio-card__inner">
-                      <div class="portfolio-card__media">
-                        <picture class="portfolio-card__picture">
-                          <source srcset="images/portfolio-card-2.webp" type="image/webp">
-                          <img src="images/portfolio-card-2.jpg" width="1254" height="940" alt="Nestvested">
-                        </picture>
-                        <div class="portfolio-card__cover">
-                          <p class="portfolio-card__cover-title">Перейти на сайт</p>
+                        <div class="portfolio-card__content">
+                          <div class="portfolio-card__icon"></div>
+                          <div class="row portfolio-card__row">
+                            <div class="row__col portfolio-card__col">
+                              <ul class="portfolio-card__list">
+                                <li>2024</li>
+                              </ul>
+                            </div>
+                            <div class="row__col portfolio-card__col">
+                              <ul class="portfolio-card__list">
+                                <li>
+                                  <a href="#" target="_blank">Nestvested</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="row__col portfolio-card__col">
+                              <ul class="portfolio-card__list">
+                                <li>Концепт. дизайн</li>
+                                <li>Frontend / Backend</li>
+                                <li>Поддержка</li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="portfolio-card__content">
-                        <div class="row portfolio-card__row">
-                          <div class="row__col portfolio-card__col">
-                            <ul class="portfolio-card__list">
-                              <li>2024</li>
-                            </ul>
-                          </div>
-                          <div class="row__col portfolio-card__col">
-                            <ul class="portfolio-card__list">
-                              <li>
-                                <a href="#" target="_blank">Nestvested</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="row__col portfolio-card__col">
-                            <ul class="portfolio-card__list">
-                              <li>Концепт. дизайн</li>
-                              <li>Frontend / Backend</li>
-                              <li>Поддержка</li>
-                            </ul>
+                    </article>
+                  </div>
+                  <div class="row__col portfolio-section__col portfolio-section__col--size-2">
+                    <article class="portfolio-card portfolio-section__card">
+                      <div class="portfolio-card__inner">
+                        <div class="portfolio-card__media">
+                          <picture class="portfolio-card__picture">
+                            
+                            <img src="images/portfolio-card-3.jpg" width="1254" height="940" alt="K72">
+                          </picture>
+                          <div class="portfolio-card__cover">
+                            <p class="portfolio-card__cover-title">Перейти на сайт</p>
                           </div>
                         </div>
-                        <div class="portfolio-card__icon">
-                          <svg class="u-icon">
-                            <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                <div class="row__col portfolio-section__col portfolio-section__col--size-2">
-                  <article class="portfolio-card portfolio-section__card">
-                    <div class="portfolio-card__inner">
-                      <div class="portfolio-card__media">
-                        <picture class="portfolio-card__picture">
-                          <source srcset="images/portfolio-card-3.webp" type="image/webp">
-                          <img src="images/portfolio-card-3.jpg" width="1254" height="940" alt="K72">
-                        </picture>
-                        <div class="portfolio-card__cover">
-                          <p class="portfolio-card__cover-title">Перейти на сайт</p>
+                        <div class="portfolio-card__content">
+                          <div class="portfolio-card__icon"></div>
+                          <div class="row portfolio-card__row">
+                            <div class="row__col portfolio-card__col">
+                              <ul class="portfolio-card__list">
+                                <li>2024</li>
+                              </ul>
+                            </div>
+                            <div class="row__col portfolio-card__col">
+                              <ul class="portfolio-card__list">
+                                <li>
+                                  <a href="#" target="_blank">K72</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="row__col portfolio-card__col">
+                              <ul class="portfolio-card__list">
+                                <li>Аналитика</li>
+                                <li>Frontend / Backend</li>
+                                <li>Поддержка</li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="portfolio-card__content">
-                        <div class="row portfolio-card__row">
-                          <div class="row__col portfolio-card__col">
-                            <ul class="portfolio-card__list">
-                              <li>2024</li>
-                            </ul>
-                          </div>
-                          <div class="row__col portfolio-card__col">
-                            <ul class="portfolio-card__list">
-                              <li>
-                                <a href="#" target="_blank">K72</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="row__col portfolio-card__col">
-                            <ul class="portfolio-card__list">
-                              <li>Аналитика</li>
-                              <li>Frontend / Backend</li>
-                              <li>Поддержка</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="portfolio-card__icon">
-                          <svg class="u-icon">
-                            <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
+                    </article>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
-          <section class="projects-section">
-            <div class="container projects-section__container">
-              <header class="row projects-section__header">
-                <div class="row__col projects-section__header-col projects-section__header-col--title">
-                  <h2 class="projects-section__title">Другие завершенные проекты</h2>
-                </div>
-              </header>
-              <div class="projects-list">
-                <header class="row projects-list__header">
-                  <div class="projects-list__col projects-list__col--year row__col--1">
-                    <p class="projects-list__suptitle">Год</p>
-                  </div>
-                  <div class="projects-list__col projects-list__col--client row__col--5">
-                    <p class="projects-list__suptitle">Клиент</p>
-                  </div>
-                  <div class="projects-list__col projects-list__col--services row__col--2">
-                    <p class="projects-list__suptitle">Услуга</p>
+            </section>
+            
+            
+            <section class="projects-section">
+              <div class="container projects-section__container">
+                <header class="row projects-section__header">
+                  <div class="row__col--7 projects-section__header-col projects-section__header-col--title">
+                    <h2 class="projects-section__title">Другие завершенные проекты</h2>
                   </div>
                 </header>
-                <div class="projects-list__main">
-                  <div class="projects-list__main-card" data-year="2024">
-                    <div class="row projects-list__main-row">
-                      <div class="projects-list__col projects-list__col--year row__col--1">
-                        <p class="projects-list__text">2024</p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--client row__col--5">
-                        <p class="projects-list__text">
-                          <a href="#">Dropterra</a>
-                        </p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--services row__col--2">
-                        <div class="projects-list__services">
-                          <div class="projects-list__services-text">
-                            <p class="projects-list__text">Концепт. дизайн, Front-end</p>
+                <div class="projects-list">
+                  <header class="row projects-list__header">
+                    <div class="projects-list__col projects-list__col--year row__col--1">
+                      <p class="projects-list__suptitle">Год</p>
+                    </div>
+                    <div class="projects-list__col projects-list__col--client row__col--5">
+                      <p class="projects-list__suptitle">Клиент</p>
+                    </div>
+                    <div class="projects-list__col projects-list__col--services row__col--2">
+                      <p class="projects-list__suptitle">Услуга</p>
+                    </div>
+                  </header>
+                  <div class="projects-list__main">
+                    <div class="projects-list__main-card" data-year="2024">
+                      <div class="row projects-list__main-row">
+                        <div class="projects-list__col projects-list__col--year row__col--1">
+                          <p class="projects-list__text">2024</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--client row__col--5">
+                          <p class="projects-list__text">Dropterra</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--services row__col--2">
+                          <div class="projects-list__services">
+                            <div class="projects-list__services-text">
+                              <p class="projects-list__text">Концепт. дизайн, Front-end</p>
+                            </div>
+                            <div class="projects-list__services-aside">
+                              <p class="projects-list__services-soon">cкоро</p>
+                            </div>
                           </div>
-                          <div class="projects-list__services-aside">
-                            <p class="projects-list__services-soon">cкоро</p>
+                        </div>
+                      </div>
+                      <div class="row projects-list__main-row js-projects-card">
+                        <div class="projects-list__col projects-list__col--year row__col--1">
+                          <p class="projects-list__text">2024</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--client row__col--5">
+                          <p class="projects-list__text">
+                            <a href="#" class="projects-list__link">Nestvested™</a>
+                          </p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--services row__col--2">
+                          <div class="projects-list__services">
+                            <div class="projects-list__services-text">
+                              <p class="projects-list__text">Back-end</p>
+                            </div>
+                            <div class="projects-list__services-aside">
+                              <div class="projects-list__services-icon"></div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="row projects-list__main-row">
-                      <div class="projects-list__col projects-list__col--year row__col--1">
-                        <p class="projects-list__text">2024</p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--client row__col--5">
-                        <p class="projects-list__text">
-                          <a href="#" class="js-projects-card projects-list__link">Nestvested™</a>
-                        </p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--services row__col--2">
-                        <div class="projects-list__services">
-                          <div class="projects-list__services-text">
-                            <p class="projects-list__text">Back-end</p>
+                    <div class="projects-list__main-card" data-year="2023">
+                      <div class="row projects-list__main-row js-projects-card">
+                        <div class="projects-list__col projects-list__col--year row__col--1">
+                          <p class="projects-list__text">2023</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--client row__col--5">
+                          <p class="projects-list__text">
+                            <a href="#" class="projects-list__link">K72</a>
+                          </p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--services row__col--2">
+                          <div class="projects-list__services">
+                            <div class="projects-list__services-text">
+                              <p class="projects-list__text">Front-end, Back-end</p>
+                            </div>
+                            <div class="projects-list__services-aside">
+                              <div class="projects-list__services-icon"></div>
+                            </div>
                           </div>
-                          <div class="projects-list__services-aside">
-                            <svg class="u-icon projects-list__services-icon">
-                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                            </svg>
+                        </div>
+                      </div>
+                      <div class="row projects-list__main-row js-projects-card">
+                        <div class="projects-list__col projects-list__col--year row__col--1">
+                          <p class="projects-list__text">2023</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--client row__col--5">
+                          <p class="projects-list__text">
+                            <a href="#" class="projects-list__link">ABIYA</a>
+                          </p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--services row__col--2">
+                          <div class="projects-list__services">
+                            <div class="projects-list__services-text">
+                              <p class="projects-list__text">Концепт. дизайн, Front-end, Back-end</p>
+                            </div>
+                            <div class="projects-list__services-aside">
+                              <div class="projects-list__services-icon"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row projects-list__main-row js-projects-card">
+                        <div class="projects-list__col projects-list__col--year row__col--1">
+                          <p class="projects-list__text">2023</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--client row__col--5">
+                          <p class="projects-list__text">
+                            <a href="#" class="projects-list__link">Cannify Farma</a>
+                          </p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--services row__col--2">
+                          <div class="projects-list__services">
+                            <div class="projects-list__services-text">
+                              <p class="projects-list__text">Front-end, Back-end</p>
+                            </div>
+                            <div class="projects-list__services-aside">
+                              <div class="projects-list__services-icon"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row projects-list__main-row js-projects-card">
+                        <div class="projects-list__col projects-list__col--year row__col--1">
+                          <p class="projects-list__text">2023</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--client row__col--5">
+                          <p class="projects-list__text">
+                            <a href="#" class="projects-list__link">Nestvested™</a>
+                          </p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--services row__col--2">
+                          <div class="projects-list__services">
+                            <div class="projects-list__services-text">
+                              <p class="projects-list__text">Концепт. дизайн, Front-end, Back-end</p>
+                            </div>
+                            <div class="projects-list__services-aside">
+                              <div class="projects-list__services-icon"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row projects-list__main-row js-projects-card">
+                        <div class="projects-list__col projects-list__col--year row__col--1">
+                          <p class="projects-list__text">2023</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--client row__col--5">
+                          <p class="projects-list__text">
+                            <a href="#" class="projects-list__link">Dropterra</a>
+                          </p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--services row__col--2">
+                          <div class="projects-list__services">
+                            <div class="projects-list__services-text">
+                              <p class="projects-list__text">Back-end</p>
+                            </div>
+                            <div class="projects-list__services-aside">
+                              <div class="projects-list__services-icon"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row projects-list__main-row js-projects-card">
+                        <div class="projects-list__col projects-list__col--year row__col--1">
+                          <p class="projects-list__text">2023</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--client row__col--5">
+                          <p class="projects-list__text">
+                            <a href="#" class="projects-list__link">K72</a>
+                          </p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--services row__col--2">
+                          <div class="projects-list__services">
+                            <div class="projects-list__services-text">
+                              <p class="projects-list__text">Front-end, Back-end</p>
+                            </div>
+                            <div class="projects-list__services-aside">
+                              <div class="projects-list__services-icon"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row projects-list__main-row js-projects-card">
+                        <div class="projects-list__col projects-list__col--year row__col--1">
+                          <p class="projects-list__text">2023</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--client row__col--5">
+                          <p class="projects-list__text">
+                            <a href="#" class="projects-list__link">ABIYA</a>
+                          </p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--services row__col--2">
+                          <div class="projects-list__services">
+                            <div class="projects-list__services-text">
+                              <p class="projects-list__text">Концепт. дизайн, Front-end, Back-end</p>
+                            </div>
+                            <div class="projects-list__services-aside">
+                              <div class="projects-list__services-icon"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row projects-list__main-row js-projects-card">
+                        <div class="projects-list__col projects-list__col--year row__col--1">
+                          <p class="projects-list__text">2023</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--client row__col--5">
+                          <p class="projects-list__text">
+                            <a href="#" class="projects-list__link">Dropterra</a>
+                          </p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--services row__col--2">
+                          <div class="projects-list__services">
+                            <div class="projects-list__services-text">
+                              <p class="projects-list__text">Back-end</p>
+                            </div>
+                            <div class="projects-list__services-aside">
+                              <div class="projects-list__services-icon"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row projects-list__main-row js-projects-card">
+                        <div class="projects-list__col projects-list__col--year row__col--1">
+                          <p class="projects-list__text">2023</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--client row__col--5">
+                          <p class="projects-list__text">
+                            <a href="#" class="projects-list__link">Nestvested™</a>
+                          </p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--services row__col--2">
+                          <div class="projects-list__services">
+                            <div class="projects-list__services-text">
+                              <p class="projects-list__text">Front-end</p>
+                            </div>
+                            <div class="projects-list__services-aside">
+                              <div class="projects-list__services-icon"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row projects-list__main-row js-projects-card">
+                        <div class="projects-list__col projects-list__col--year row__col--1">
+                          <p class="projects-list__text">2023</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--client row__col--5">
+                          <p class="projects-list__text">
+                            <a href="#" class="projects-list__link">ABIYA</a>
+                          </p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--services row__col--2">
+                          <div class="projects-list__services">
+                            <div class="projects-list__services-text">
+                              <p class="projects-list__text">Концепт. дизайн</p>
+                            </div>
+                            <div class="projects-list__services-aside">
+                              <div class="projects-list__services-icon"></div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="projects-list__main-card" data-year="2023">
-                    <div class="row projects-list__main-row">
-                      <div class="projects-list__col projects-list__col--year row__col--1">
-                        <p class="projects-list__text">2023</p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--client row__col--5">
-                        <p class="projects-list__text">
-                          <a href="#" class="js-projects-card projects-list__link">K72</a>
-                        </p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--services row__col--2">
-                        <div class="projects-list__services">
-                          <div class="projects-list__services-text">
-                            <p class="projects-list__text">Front-end, Back-end</p>
+                    <div class="projects-list__main-card" data-year="2022">
+                      <div class="row projects-list__main-row js-projects-card">
+                        <div class="projects-list__col projects-list__col--year row__col--1">
+                          <p class="projects-list__text">2022</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--client row__col--5">
+                          <p class="projects-list__text">
+                            <a href="#" class="projects-list__link">Nestvested™</a>
+                          </p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--services row__col--2">
+                          <div class="projects-list__services">
+                            <div class="projects-list__services-text">
+                              <p class="projects-list__text">Концепт. дизайн, Back-end</p>
+                            </div>
+                            <div class="projects-list__services-aside">
+                              <div class="projects-list__services-icon"></div>
+                            </div>
                           </div>
-                          <div class="projects-list__services-aside">
-                            <svg class="u-icon projects-list__services-icon">
-                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                            </svg>
+                        </div>
+                      </div>
+                      <div class="row projects-list__main-row js-projects-card">
+                        <div class="projects-list__col projects-list__col--year row__col--1">
+                          <p class="projects-list__text">2022</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--client row__col--5">
+                          <p class="projects-list__text">
+                            <a href="#" class="projects-list__link">Agache.</a>
+                          </p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--services row__col--2">
+                          <div class="projects-list__services">
+                            <div class="projects-list__services-text">
+                              <p class="projects-list__text">Front-end, Back-end</p>
+                            </div>
+                            <div class="projects-list__services-aside">
+                              <div class="projects-list__services-icon"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row projects-list__main-row js-projects-card">
+                        <div class="projects-list__col projects-list__col--year row__col--1">
+                          <p class="projects-list__text">2022</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--client row__col--5">
+                          <p class="projects-list__text">
+                            <a href="#" class="projects-list__link">Dropterra</a>
+                          </p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--services row__col--2">
+                          <div class="projects-list__services">
+                            <div class="projects-list__services-text">
+                              <p class="projects-list__text">Концепт. дизайн</p>
+                            </div>
+                            <div class="projects-list__services-aside">
+                              <div class="projects-list__services-icon"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row projects-list__main-row js-projects-card">
+                        <div class="projects-list__col projects-list__col--year row__col--1">
+                          <p class="projects-list__text">2022</p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--client row__col--5">
+                          <p class="projects-list__text">
+                            <a href="#" class="projects-list__link">Cannify Farma</a>
+                          </p>
+                        </div>
+                        <div class="projects-list__col projects-list__col--services row__col--2">
+                          <div class="projects-list__services">
+                            <div class="projects-list__services-text">
+                              <p class="projects-list__text">Front-end</p>
+                            </div>
+                            <div class="projects-list__services-aside">
+                              <div class="projects-list__services-icon"></div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="row projects-list__main-row">
-                      <div class="projects-list__col projects-list__col--year row__col--1">
-                        <p class="projects-list__text">2023</p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--client row__col--5">
-                        <p class="projects-list__text">
-                          <a href="#" class="js-projects-card projects-list__link">ABIYA</a>
-                        </p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--services row__col--2">
-                        <div class="projects-list__services">
-                          <div class="projects-list__services-text">
-                            <p class="projects-list__text">Концепт. дизайн, Front-end, Back-end</p>
-                          </div>
-                          <div class="projects-list__services-aside">
-                            <svg class="u-icon projects-list__services-icon">
-                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                            </svg>
-                          </div>
+                    <div class="js-projects-media projects-list__main-media">
+                      <div class="js-projects-media-inner projects-list__main-media-inner">
+                        <div class="projects-list__main-media-card">
+                          <picture class="projects-list__main-media-picture">
+                            
+                            <img src="images/portfolio-card-2.jpg" width="940" height="705" alt="">
+                          </picture>
+                        </div>
+                        <div class="projects-list__main-media-card">
+                          <picture class="projects-list__main-media-picture">
+                            
+                            <img src="https://images.unsplash.com/photo-1505210029939-d93d1b14d856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" width="940" height="705" alt="">
+                          </picture>
+                        </div>
+                        <div class="projects-list__main-media-card">
+                          <picture class="projects-list__main-media-picture">
+                            
+                            <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                          </picture>
+                        </div>
+                        <div class="projects-list__main-media-card">
+                          <picture class="projects-list__main-media-picture">
+                            
+                            <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                          </picture>
+                        </div>
+                        <div class="projects-list__main-media-card">
+                          <picture class="projects-list__main-media-picture">
+                            
+                            <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                          </picture>
+                        </div>
+                        <div class="projects-list__main-media-card">
+                          <picture class="projects-list__main-media-picture">
+                            
+                            <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                          </picture>
+                        </div>
+                        <div class="projects-list__main-media-card">
+                          <picture class="projects-list__main-media-picture">
+                            
+                            <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                          </picture>
+                        </div>
+                        <div class="projects-list__main-media-card">
+                          <picture class="projects-list__main-media-picture">
+                            
+                            <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                          </picture>
+                        </div>
+                        <div class="projects-list__main-media-card">
+                          <picture class="projects-list__main-media-picture">
+                            
+                            <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                          </picture>
+                        </div>
+                        <div class="projects-list__main-media-card">
+                          <picture class="projects-list__main-media-picture">
+                            
+                            <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                          </picture>
+                        </div>
+                        <div class="projects-list__main-media-card">
+                          <picture class="projects-list__main-media-picture">
+                            
+                            <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                          </picture>
+                        </div>
+                        <div class="projects-list__main-media-card">
+                          <picture class="projects-list__main-media-picture">
+                            
+                            <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                          </picture>
+                        </div>
+                        <div class="projects-list__main-media-card">
+                          <picture class="projects-list__main-media-picture">
+                            
+                            <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                          </picture>
+                        </div>
+                        <div class="projects-list__main-media-card">
+                          <picture class="projects-list__main-media-picture">
+                            
+                            <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                          </picture>
+                        </div>
+                        <div class="projects-list__main-media-card">
+                          <picture class="projects-list__main-media-picture">
+                            
+                            <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
+                          </picture>
                         </div>
                       </div>
-                    </div>
-                    <div class="row projects-list__main-row">
-                      <div class="projects-list__col projects-list__col--year row__col--1">
-                        <p class="projects-list__text">2023</p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--client row__col--5">
-                        <p class="projects-list__text">
-                          <a href="#" class="js-projects-card projects-list__link">Cannify Farma</a>
-                        </p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--services row__col--2">
-                        <div class="projects-list__services">
-                          <div class="projects-list__services-text">
-                            <p class="projects-list__text">Front-end, Back-end</p>
-                          </div>
-                          <div class="projects-list__services-aside">
-                            <svg class="u-icon projects-list__services-icon">
-                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row projects-list__main-row">
-                      <div class="projects-list__col projects-list__col--year row__col--1">
-                        <p class="projects-list__text">2023</p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--client row__col--5">
-                        <p class="projects-list__text">
-                          <a href="#" class="js-projects-card projects-list__link">Nestvested™</a>
-                        </p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--services row__col--2">
-                        <div class="projects-list__services">
-                          <div class="projects-list__services-text">
-                            <p class="projects-list__text">Концепт. дизайн, Front-end, Back-end</p>
-                          </div>
-                          <div class="projects-list__services-aside">
-                            <svg class="u-icon projects-list__services-icon">
-                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row projects-list__main-row">
-                      <div class="projects-list__col projects-list__col--year row__col--1">
-                        <p class="projects-list__text">2023</p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--client row__col--5">
-                        <p class="projects-list__text">
-                          <a href="#" class="js-projects-card projects-list__link">Dropterra</a>
-                        </p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--services row__col--2">
-                        <div class="projects-list__services">
-                          <div class="projects-list__services-text">
-                            <p class="projects-list__text">Back-end</p>
-                          </div>
-                          <div class="projects-list__services-aside">
-                            <svg class="u-icon projects-list__services-icon">
-                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row projects-list__main-row">
-                      <div class="projects-list__col projects-list__col--year row__col--1">
-                        <p class="projects-list__text">2023</p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--client row__col--5">
-                        <p class="projects-list__text">
-                          <a href="#" class="js-projects-card projects-list__link">K72</a>
-                        </p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--services row__col--2">
-                        <div class="projects-list__services">
-                          <div class="projects-list__services-text">
-                            <p class="projects-list__text">Front-end, Back-end</p>
-                          </div>
-                          <div class="projects-list__services-aside">
-                            <svg class="u-icon projects-list__services-icon">
-                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row projects-list__main-row">
-                      <div class="projects-list__col projects-list__col--year row__col--1">
-                        <p class="projects-list__text">2023</p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--client row__col--5">
-                        <p class="projects-list__text">
-                          <a href="#" class="js-projects-card projects-list__link">ABIYA</a>
-                        </p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--services row__col--2">
-                        <div class="projects-list__services">
-                          <div class="projects-list__services-text">
-                            <p class="projects-list__text">Концепт. дизайн, Front-end, Back-end</p>
-                          </div>
-                          <div class="projects-list__services-aside">
-                            <svg class="u-icon projects-list__services-icon">
-                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row projects-list__main-row">
-                      <div class="projects-list__col projects-list__col--year row__col--1">
-                        <p class="projects-list__text">2023</p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--client row__col--5">
-                        <p class="projects-list__text">
-                          <a href="#" class="js-projects-card projects-list__link">Dropterra</a>
-                        </p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--services row__col--2">
-                        <div class="projects-list__services">
-                          <div class="projects-list__services-text">
-                            <p class="projects-list__text">Back-end</p>
-                          </div>
-                          <div class="projects-list__services-aside">
-                            <svg class="u-icon projects-list__services-icon">
-                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row projects-list__main-row">
-                      <div class="projects-list__col projects-list__col--year row__col--1">
-                        <p class="projects-list__text">2023</p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--client row__col--5">
-                        <p class="projects-list__text">
-                          <a href="#" class="js-projects-card projects-list__link">Nestvested™</a>
-                        </p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--services row__col--2">
-                        <div class="projects-list__services">
-                          <div class="projects-list__services-text">
-                            <p class="projects-list__text">Front-end</p>
-                          </div>
-                          <div class="projects-list__services-aside">
-                            <svg class="u-icon projects-list__services-icon">
-                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row projects-list__main-row">
-                      <div class="projects-list__col projects-list__col--year row__col--1">
-                        <p class="projects-list__text">2023</p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--client row__col--5">
-                        <p class="projects-list__text">
-                          <a href="#" class="js-projects-card projects-list__link">ABIYA</a>
-                        </p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--services row__col--2">
-                        <div class="projects-list__services">
-                          <div class="projects-list__services-text">
-                            <p class="projects-list__text">Концепт. дизайн</p>
-                          </div>
-                          <div class="projects-list__services-aside">
-                            <svg class="u-icon projects-list__services-icon">
-                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="projects-list__main-card" data-year="2022">
-                    <div class="row projects-list__main-row">
-                      <div class="projects-list__col projects-list__col--year row__col--1">
-                        <p class="projects-list__text">2022</p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--client row__col--5">
-                        <p class="projects-list__text">
-                          <a href="#" class="js-projects-card projects-list__link">Nestvested™</a>
-                        </p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--services row__col--2">
-                        <div class="projects-list__services">
-                          <div class="projects-list__services-text">
-                            <p class="projects-list__text">Концепт. дизайн, Back-end</p>
-                          </div>
-                          <div class="projects-list__services-aside">
-                            <svg class="u-icon projects-list__services-icon">
-                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row projects-list__main-row">
-                      <div class="projects-list__col projects-list__col--year row__col--1">
-                        <p class="projects-list__text">2022</p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--client row__col--5">
-                        <p class="projects-list__text">
-                          <a href="#" class="js-projects-card projects-list__link">Agache.</a>
-                        </p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--services row__col--2">
-                        <div class="projects-list__services">
-                          <div class="projects-list__services-text">
-                            <p class="projects-list__text">Front-end, Back-end</p>
-                          </div>
-                          <div class="projects-list__services-aside">
-                            <svg class="u-icon projects-list__services-icon">
-                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row projects-list__main-row">
-                      <div class="projects-list__col projects-list__col--year row__col--1">
-                        <p class="projects-list__text">2022</p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--client row__col--5">
-                        <p class="projects-list__text">
-                          <a href="#" class="js-projects-card projects-list__link">Dropterra</a>
-                        </p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--services row__col--2">
-                        <div class="projects-list__services">
-                          <div class="projects-list__services-text">
-                            <p class="projects-list__text">Концепт. дизайн</p>
-                          </div>
-                          <div class="projects-list__services-aside">
-                            <svg class="u-icon projects-list__services-icon">
-                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row projects-list__main-row">
-                      <div class="projects-list__col projects-list__col--year row__col--1">
-                        <p class="projects-list__text">2022</p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--client row__col--5">
-                        <p class="projects-list__text">
-                          <a href="#" class="js-projects-card projects-list__link">Cannify Farma</a>
-                        </p>
-                      </div>
-                      <div class="projects-list__col projects-list__col--services row__col--2">
-                        <div class="projects-list__services">
-                          <div class="projects-list__services-text">
-                            <p class="projects-list__text">Front-end</p>
-                          </div>
-                          <div class="projects-list__services-aside">
-                            <svg class="u-icon projects-list__services-icon">
-                              <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="js-projects-media projects-list__main-media">
-                    <div class="projects-list__main-media-card">
-                      <picture class="projects-list__main-media-picture">
-                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
-                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
-                      </picture>
-                    </div>
-                    <div class="projects-list__main-media-card">
-                      <picture class="projects-list__main-media-picture">
-                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
-                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
-                      </picture>
-                    </div>
-                    <div class="projects-list__main-media-card">
-                      <picture class="projects-list__main-media-picture">
-                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
-                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
-                      </picture>
-                    </div>
-                    <div class="projects-list__main-media-card">
-                      <picture class="projects-list__main-media-picture">
-                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
-                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
-                      </picture>
-                    </div>
-                    <div class="projects-list__main-media-card">
-                      <picture class="projects-list__main-media-picture">
-                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
-                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
-                      </picture>
-                    </div>
-                    <div class="projects-list__main-media-card">
-                      <picture class="projects-list__main-media-picture">
-                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
-                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
-                      </picture>
-                    </div>
-                    <div class="projects-list__main-media-card">
-                      <picture class="projects-list__main-media-picture">
-                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
-                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
-                      </picture>
-                    </div>
-                    <div class="projects-list__main-media-card">
-                      <picture class="projects-list__main-media-picture">
-                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
-                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
-                      </picture>
-                    </div>
-                    <div class="projects-list__main-media-card">
-                      <picture class="projects-list__main-media-picture">
-                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
-                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
-                      </picture>
-                    </div>
-                    <div class="projects-list__main-media-card">
-                      <picture class="projects-list__main-media-picture">
-                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
-                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
-                      </picture>
-                    </div>
-                    <div class="projects-list__main-media-card">
-                      <picture class="projects-list__main-media-picture">
-                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
-                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
-                      </picture>
-                    </div>
-                    <div class="projects-list__main-media-card">
-                      <picture class="projects-list__main-media-picture">
-                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
-                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
-                      </picture>
-                    </div>
-                    <div class="projects-list__main-media-card">
-                      <picture class="projects-list__main-media-picture">
-                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
-                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
-                      </picture>
-                    </div>
-                    <div class="projects-list__main-media-card">
-                      <picture class="projects-list__main-media-picture">
-                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
-                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
-                      </picture>
-                    </div>
-                    <div class="projects-list__main-media-card">
-                      <picture class="projects-list__main-media-picture">
-                        <source srcset="images/portfolio-card-1.webp" type="image/webp">
-                        <img src="images/portfolio-card-1.jpg" width="940" height="705" alt="">
-                      </picture>
                     </div>
                   </div>
                 </div>
+              </div>
+            </section>
+            
+          </div>
+          
+<section data-target="#contacts" id="contacts" class="intro">
+  <div class="container intro__container">
+    <div class="intro__inner">
+      <h1 class="visually-hidden intro__title">Impact</h1>
+      <div class="row intro__row">
+        <div class="intro__col intro__col--media row__col--7">
+          <div class="intro__video-mask video-mask video-mask--support">
+            <video class="video-mask__el" autoplay muted loop>
+              <source src="static/video/video-mask.mp4" type="video/mp4">
+              <source src="static/video/video-mask.webm" type="video/webm">
+            </video>
+            <svg width="1" height="1" viewBox="0 0 1 1" fill="none" xmlns="http://www.w3.org/2000/svg" class="video-mask__mask">
+              <clipPath id="svg-path" clipPathUnits="objectBoundingBox">
+                <path d="M0.975678 0.606478C0.964069 0.606478 0.95452 0.604787 0.947036 0.601404C0.939552 0.597761 0.933745 0.591776 0.929616 0.583449C0.925486 0.574863 0.923422 0.563023 0.923422 0.547931V0.436691H0.894775V0.405076H0.923422V0.341064H0.961357V0.405076H0.999292V0.436691H0.961357V0.549102C0.961357 0.556128 0.962004 0.561462 0.963294 0.565105C0.964839 0.568748 0.967164 0.57135 0.970258 0.572911C0.973358 0.574212 0.977743 0.574862 0.983422 0.574862C0.987811 0.574862 0.99323 0.574342 0.99968 0.573301V0.604136C0.991166 0.605697 0.983162 0.606478 0.975678 0.606478Z" fill="#171717" class="logo-title-letter logo-title-letter-6"/>
+                <path d="M0.809807 0.60994C0.790454 0.60994 0.773421 0.605516 0.758709 0.596669C0.744 0.587562 0.732646 0.575071 0.724647 0.559199C0.716644 0.543326 0.712646 0.525112 0.712646 0.504555C0.712646 0.483999 0.716644 0.465784 0.724647 0.449911C0.732646 0.433778 0.743873 0.421288 0.758321 0.412441C0.773034 0.403594 0.790067 0.39917 0.809419 0.39917C0.825937 0.39917 0.840646 0.402553 0.853549 0.409318C0.866452 0.415824 0.876776 0.425061 0.884515 0.43703C0.892259 0.44874 0.896904 0.462141 0.898453 0.477233H0.859356C0.858581 0.469427 0.856516 0.462011 0.853162 0.454985C0.849807 0.447959 0.844515 0.442235 0.837291 0.437811C0.830322 0.433128 0.821161 0.430786 0.809807 0.430786C0.796389 0.430786 0.785422 0.434168 0.776904 0.440934C0.768389 0.447699 0.762063 0.456676 0.757938 0.467865C0.754064 0.479055 0.752131 0.491284 0.752131 0.504555C0.752131 0.517825 0.754064 0.530056 0.757938 0.541244C0.762063 0.552173 0.768389 0.56102 0.776904 0.567786C0.785422 0.574551 0.796389 0.577934 0.809807 0.577934C0.821161 0.577934 0.830454 0.575722 0.837678 0.571298C0.844903 0.566615 0.850067 0.56076 0.853162 0.553735C0.856516 0.546448 0.858581 0.538642 0.859356 0.530316H0.898453C0.897678 0.545668 0.893421 0.559329 0.885677 0.571298C0.877938 0.583268 0.867487 0.592766 0.854324 0.599792C0.841161 0.606557 0.826325 0.60994 0.809807 0.60994Z" fill="#171717" class="logo-title-letter logo-title-letter-5"/>
+                <path d="M0.597364 0.609451C0.577491 0.609451 0.561749 0.604247 0.550135 0.593839C0.538522 0.583431 0.532715 0.569639 0.532715 0.552466C0.532715 0.538154 0.536074 0.526705 0.542783 0.518118C0.549492 0.509271 0.558654 0.502505 0.570267 0.497822C0.581881 0.492878 0.596844 0.488714 0.615167 0.485332C0.618266 0.484551 0.621621 0.4839 0.625235 0.48338C0.635039 0.481298 0.642523 0.479347 0.647687 0.477525C0.653107 0.475704 0.657364 0.473101 0.660459 0.469719C0.663558 0.466336 0.665103 0.461782 0.665103 0.456058C0.665103 0.447991 0.662136 0.441616 0.656202 0.436932C0.650522 0.431988 0.640974 0.429517 0.627555 0.429517C0.616202 0.429517 0.607168 0.430817 0.600459 0.43342C0.594009 0.435761 0.589233 0.439665 0.586138 0.445129C0.583298 0.450593 0.581493 0.457879 0.580718 0.466987H0.542008C0.543038 0.44643 0.550655 0.429907 0.564848 0.417417C0.579041 0.404927 0.600459 0.398682 0.629105 0.398682C0.651297 0.398682 0.668977 0.404146 0.682136 0.415075C0.695554 0.425744 0.702268 0.443178 0.702268 0.467377V0.55871C0.702268 0.566256 0.702911 0.571851 0.704201 0.575494C0.70575 0.578877 0.708203 0.580568 0.711557 0.580568C0.713107 0.580308 0.714652 0.580178 0.716202 0.580178V0.603596C0.708977 0.605158 0.702523 0.605938 0.696849 0.605938C0.68704 0.605938 0.679684 0.603727 0.674784 0.599303C0.66988 0.594619 0.66678 0.586813 0.665491 0.575884H0.664716C0.658007 0.586553 0.648977 0.594879 0.637619 0.600864C0.626265 0.606589 0.612847 0.609451 0.597364 0.609451ZM0.605878 0.578616C0.617232 0.578616 0.627428 0.576665 0.636461 0.572762C0.645491 0.568858 0.65246 0.563004 0.657364 0.555198C0.662523 0.547131 0.665103 0.537503 0.665103 0.526314V0.497822C0.662264 0.500424 0.656976 0.502895 0.649233 0.505237C0.641749 0.507579 0.632587 0.509921 0.621749 0.512263C0.60962 0.514605 0.599944 0.517467 0.592719 0.52085C0.58575 0.523972 0.580586 0.527876 0.577232 0.532559C0.573877 0.537243 0.5722 0.542968 0.5722 0.549733C0.5722 0.559361 0.574912 0.566647 0.580331 0.571591C0.58575 0.576275 0.594265 0.578616 0.605878 0.578616Z" fill="#171717" class="logo-title-letter logo-title-letter-4"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.438108 0.60955C0.423914 0.60955 0.411656 0.606817 0.401333 0.601353C0.391268 0.595888 0.382494 0.587741 0.376559 0.578634V0.673171H0.338623V0.405025H0.376559V0.429542C0.382752 0.421215 0.391655 0.413221 0.40172 0.407757C0.412043 0.402032 0.424172 0.39917 0.438108 0.39917C0.454881 0.39917 0.469977 0.403463 0.4834 0.412051C0.496819 0.420377 0.507397 0.432607 0.515141 0.44874C0.522881 0.464613 0.526755 0.483218 0.526755 0.504555C0.526755 0.525892 0.522881 0.544497 0.515141 0.56037C0.507397 0.576242 0.496819 0.588473 0.4834 0.597059C0.469977 0.605386 0.454881 0.60955 0.438108 0.60955ZM0.462106 0.568176C0.45385 0.574681 0.443785 0.577934 0.431914 0.577934C0.420559 0.577934 0.410752 0.574942 0.402495 0.568957C0.394236 0.562972 0.387913 0.554515 0.383526 0.543587C0.379139 0.532397 0.376559 0.519336 0.376559 0.504504C0.376559 0.489412 0.379139 0.476453 0.383526 0.465524C0.387913 0.454334 0.394236 0.445878 0.402495 0.440153C0.410752 0.434168 0.420559 0.431176 0.431914 0.431176C0.443785 0.431176 0.45385 0.434428 0.462106 0.440934C0.470624 0.447439 0.476819 0.456286 0.480688 0.467475C0.484818 0.478664 0.486882 0.491024 0.486882 0.504555C0.486882 0.517825 0.484818 0.530056 0.480688 0.541244C0.476819 0.552433 0.470624 0.561411 0.462106 0.568176Z" fill="#171717" class="logo-title-letter logo-title-letter-3"/>
+                <path d="M0.171675 0.476452C0.171675 0.46162 0.169223 0.450561 0.16432 0.443276C0.159675 0.43573 0.150642 0.431957 0.137223 0.431957C0.127933 0.431957 0.119803 0.434038 0.112836 0.438201C0.105868 0.442365 0.100449 0.44822 0.0965777 0.455766C0.0929647 0.463312 0.0911584 0.472029 0.0911584 0.481917V0.604085H0.0532227V0.405025H0.0911584V0.430375C0.0973516 0.421267 0.105997 0.413482 0.115545 0.407757C0.125094 0.402032 0.136707 0.39917 0.150384 0.39917C0.164062 0.39917 0.175158 0.402163 0.183675 0.408147C0.192191 0.413872 0.198513 0.422459 0.202642 0.433908H0.203417C0.211417 0.422979 0.220578 0.414522 0.230901 0.408538C0.241482 0.402293 0.253868 0.39917 0.268062 0.39917C0.287675 0.39917 0.302514 0.405025 0.312579 0.416734C0.322901 0.428184 0.328062 0.444576 0.328062 0.465914V0.604085H0.290127V0.476452C0.290127 0.46162 0.287675 0.450561 0.282772 0.443276C0.278127 0.43573 0.269095 0.431957 0.255675 0.431957C0.246385 0.431957 0.238255 0.434038 0.231288 0.438201C0.22432 0.442365 0.218901 0.44822 0.21503 0.455766C0.211417 0.463312 0.20961 0.472029 0.20961 0.481917V0.604085H0.171675V0.476452Z" fill="#171717" class="logo-title-letter logo-title-letter-2"/>
+                <path d="M0 0.324951H0.0425808V0.604026H0V0.324951Z" fill="#171717" class="logo-title-letter logo-title-letter-1"/>
+              </clipPath>
+            </svg>
+          </div>
+          <div class="intro__video-mask video-mask video-mask--no-support">
+            <svg width="1" height="1" viewBox="0 0 1 1" fill="none" xmlns="http://www.w3.org/2000/svg" class="video-mask__mask">
+              <path d="M0.975678 0.606478C0.964069 0.606478 0.95452 0.604787 0.947036 0.601404C0.939552 0.597761 0.933745 0.591776 0.929616 0.583449C0.925486 0.574863 0.923422 0.563023 0.923422 0.547931V0.436691H0.894775V0.405076H0.923422V0.341064H0.961357V0.405076H0.999292V0.436691H0.961357V0.549102C0.961357 0.556128 0.962004 0.561462 0.963294 0.565105C0.964839 0.568748 0.967164 0.57135 0.970258 0.572911C0.973358 0.574212 0.977743 0.574862 0.983422 0.574862C0.987811 0.574862 0.99323 0.574342 0.99968 0.573301V0.604136C0.991166 0.605697 0.983162 0.606478 0.975678 0.606478Z" fill="#171717" class="logo-title-letter logo-title-letter-6"/>
+              <path d="M0.809807 0.60994C0.790454 0.60994 0.773421 0.605516 0.758709 0.596669C0.744 0.587562 0.732646 0.575071 0.724647 0.559199C0.716644 0.543326 0.712646 0.525112 0.712646 0.504555C0.712646 0.483999 0.716644 0.465784 0.724647 0.449911C0.732646 0.433778 0.743873 0.421288 0.758321 0.412441C0.773034 0.403594 0.790067 0.39917 0.809419 0.39917C0.825937 0.39917 0.840646 0.402553 0.853549 0.409318C0.866452 0.415824 0.876776 0.425061 0.884515 0.43703C0.892259 0.44874 0.896904 0.462141 0.898453 0.477233H0.859356C0.858581 0.469427 0.856516 0.462011 0.853162 0.454985C0.849807 0.447959 0.844515 0.442235 0.837291 0.437811C0.830322 0.433128 0.821161 0.430786 0.809807 0.430786C0.796389 0.430786 0.785422 0.434168 0.776904 0.440934C0.768389 0.447699 0.762063 0.456676 0.757938 0.467865C0.754064 0.479055 0.752131 0.491284 0.752131 0.504555C0.752131 0.517825 0.754064 0.530056 0.757938 0.541244C0.762063 0.552173 0.768389 0.56102 0.776904 0.567786C0.785422 0.574551 0.796389 0.577934 0.809807 0.577934C0.821161 0.577934 0.830454 0.575722 0.837678 0.571298C0.844903 0.566615 0.850067 0.56076 0.853162 0.553735C0.856516 0.546448 0.858581 0.538642 0.859356 0.530316H0.898453C0.897678 0.545668 0.893421 0.559329 0.885677 0.571298C0.877938 0.583268 0.867487 0.592766 0.854324 0.599792C0.841161 0.606557 0.826325 0.60994 0.809807 0.60994Z" fill="#171717" class="logo-title-letter logo-title-letter-5"/>
+              <path d="M0.597364 0.609451C0.577491 0.609451 0.561749 0.604247 0.550135 0.593839C0.538522 0.583431 0.532715 0.569639 0.532715 0.552466C0.532715 0.538154 0.536074 0.526705 0.542783 0.518118C0.549492 0.509271 0.558654 0.502505 0.570267 0.497822C0.581881 0.492878 0.596844 0.488714 0.615167 0.485332C0.618266 0.484551 0.621621 0.4839 0.625235 0.48338C0.635039 0.481298 0.642523 0.479347 0.647687 0.477525C0.653107 0.475704 0.657364 0.473101 0.660459 0.469719C0.663558 0.466336 0.665103 0.461782 0.665103 0.456058C0.665103 0.447991 0.662136 0.441616 0.656202 0.436932C0.650522 0.431988 0.640974 0.429517 0.627555 0.429517C0.616202 0.429517 0.607168 0.430817 0.600459 0.43342C0.594009 0.435761 0.589233 0.439665 0.586138 0.445129C0.583298 0.450593 0.581493 0.457879 0.580718 0.466987H0.542008C0.543038 0.44643 0.550655 0.429907 0.564848 0.417417C0.579041 0.404927 0.600459 0.398682 0.629105 0.398682C0.651297 0.398682 0.668977 0.404146 0.682136 0.415075C0.695554 0.425744 0.702268 0.443178 0.702268 0.467377V0.55871C0.702268 0.566256 0.702911 0.571851 0.704201 0.575494C0.70575 0.578877 0.708203 0.580568 0.711557 0.580568C0.713107 0.580308 0.714652 0.580178 0.716202 0.580178V0.603596C0.708977 0.605158 0.702523 0.605938 0.696849 0.605938C0.68704 0.605938 0.679684 0.603727 0.674784 0.599303C0.66988 0.594619 0.66678 0.586813 0.665491 0.575884H0.664716C0.658007 0.586553 0.648977 0.594879 0.637619 0.600864C0.626265 0.606589 0.612847 0.609451 0.597364 0.609451ZM0.605878 0.578616C0.617232 0.578616 0.627428 0.576665 0.636461 0.572762C0.645491 0.568858 0.65246 0.563004 0.657364 0.555198C0.662523 0.547131 0.665103 0.537503 0.665103 0.526314V0.497822C0.662264 0.500424 0.656976 0.502895 0.649233 0.505237C0.641749 0.507579 0.632587 0.509921 0.621749 0.512263C0.60962 0.514605 0.599944 0.517467 0.592719 0.52085C0.58575 0.523972 0.580586 0.527876 0.577232 0.532559C0.573877 0.537243 0.5722 0.542968 0.5722 0.549733C0.5722 0.559361 0.574912 0.566647 0.580331 0.571591C0.58575 0.576275 0.594265 0.578616 0.605878 0.578616Z" fill="#171717" class="logo-title-letter logo-title-letter-4"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.438108 0.60955C0.423914 0.60955 0.411656 0.606817 0.401333 0.601353C0.391268 0.595888 0.382494 0.587741 0.376559 0.578634V0.673171H0.338623V0.405025H0.376559V0.429542C0.382752 0.421215 0.391655 0.413221 0.40172 0.407757C0.412043 0.402032 0.424172 0.39917 0.438108 0.39917C0.454881 0.39917 0.469977 0.403463 0.4834 0.412051C0.496819 0.420377 0.507397 0.432607 0.515141 0.44874C0.522881 0.464613 0.526755 0.483218 0.526755 0.504555C0.526755 0.525892 0.522881 0.544497 0.515141 0.56037C0.507397 0.576242 0.496819 0.588473 0.4834 0.597059C0.469977 0.605386 0.454881 0.60955 0.438108 0.60955ZM0.462106 0.568176C0.45385 0.574681 0.443785 0.577934 0.431914 0.577934C0.420559 0.577934 0.410752 0.574942 0.402495 0.568957C0.394236 0.562972 0.387913 0.554515 0.383526 0.543587C0.379139 0.532397 0.376559 0.519336 0.376559 0.504504C0.376559 0.489412 0.379139 0.476453 0.383526 0.465524C0.387913 0.454334 0.394236 0.445878 0.402495 0.440153C0.410752 0.434168 0.420559 0.431176 0.431914 0.431176C0.443785 0.431176 0.45385 0.434428 0.462106 0.440934C0.470624 0.447439 0.476819 0.456286 0.480688 0.467475C0.484818 0.478664 0.486882 0.491024 0.486882 0.504555C0.486882 0.517825 0.484818 0.530056 0.480688 0.541244C0.476819 0.552433 0.470624 0.561411 0.462106 0.568176Z" fill="#171717" class="logo-title-letter logo-title-letter-3"/>
+              <path d="M0.171675 0.476452C0.171675 0.46162 0.169223 0.450561 0.16432 0.443276C0.159675 0.43573 0.150642 0.431957 0.137223 0.431957C0.127933 0.431957 0.119803 0.434038 0.112836 0.438201C0.105868 0.442365 0.100449 0.44822 0.0965777 0.455766C0.0929647 0.463312 0.0911584 0.472029 0.0911584 0.481917V0.604085H0.0532227V0.405025H0.0911584V0.430375C0.0973516 0.421267 0.105997 0.413482 0.115545 0.407757C0.125094 0.402032 0.136707 0.39917 0.150384 0.39917C0.164062 0.39917 0.175158 0.402163 0.183675 0.408147C0.192191 0.413872 0.198513 0.422459 0.202642 0.433908H0.203417C0.211417 0.422979 0.220578 0.414522 0.230901 0.408538C0.241482 0.402293 0.253868 0.39917 0.268062 0.39917C0.287675 0.39917 0.302514 0.405025 0.312579 0.416734C0.322901 0.428184 0.328062 0.444576 0.328062 0.465914V0.604085H0.290127V0.476452C0.290127 0.46162 0.287675 0.450561 0.282772 0.443276C0.278127 0.43573 0.269095 0.431957 0.255675 0.431957C0.246385 0.431957 0.238255 0.434038 0.231288 0.438201C0.22432 0.442365 0.218901 0.44822 0.21503 0.455766C0.211417 0.463312 0.20961 0.472029 0.20961 0.481917V0.604085H0.171675V0.476452Z" fill="#171717" class="logo-title-letter logo-title-letter-2"/>
+              <path d="M0 0.324951H0.0425808V0.604026H0V0.324951Z" fill="#171717" class="logo-title-letter logo-title-letter-1"/>
+            </svg>
+          </div>
+        </div>
+        <footer class="intro__col intro__col--footer row__col--8">
+          <div class="row intro__footer">
+            <div class="row__col--5 intro__col intro__col--appeal">
+              <div class="appeal-block intro__appeal">
+                <h2 class="appeal-block__title title-size-2">Интересно поработать с нами?</h2>
+                <button type="button" class="appeal-block__btn btn-call btn-call--theme-gray" data-modal="popup-form">
+                  <span class="btn-call__title">Давайте обсудим</span>
+                </button>
               </div>
             </div>
-          </section>
-        </main>
-        <footer class="footer site__footer">
-          <div class="container footer__container">
-            <div class="row footer__inner">
-              <div class="row__col--7 footer__col footer__col--media">
-                <div class="footer__media">
-                  <div class="footer__video"></div>
-                  <div class="intro-logo footer__logo">
-                    <picture class="intro-logo__letter">
-                      <img src="images/logo-letter-1.png">
-                    </picture>
-                    <picture class="intro-logo__letter">
-                      <img src="images/logo-letter-2.png">
-                    </picture>
-                    <picture class="intro-logo__letter">
-                      <img src="images/logo-letter-3.png">
-                    </picture>
-                    <picture class="intro-logo__letter">
-                      <img src="images/logo-letter-4.png">
-                    </picture>
-                    <picture class="intro-logo__letter">
-                      <img src="images/logo-letter-5.png">
-                    </picture>
-                    <picture class="intro-logo__letter">
-                      <img src="images/logo-letter-6.png">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="row__col--5 footer__col footer__col--appeal">
-                <div class="appeal-block footer__appeal">
-                  <h2 class="appeal-block__title">Интересно поработать с нами?</h2>
-                  <button type="button" class="appeal-block__btn btn-call btn-call--theme-gray js-modal-form" data-modal="popup-form">
-                  <span class="btn-call__title">Давайте обсудим</span>
-                  </button>
-                </div>
-              </div>
-              <div class="row__col--2 footer__col footer__col--copyright">
-                <p class="footer__copyright">© 2024. Impact Agency. Все права защищены.</p>
-              </div>
+            <div class="row__col--2 intro__col intro__col--copyright">
+              <p class="intro__copyright">© 2024. Impact Agency. Все права защищены.</p>
             </div>
           </div>
         </footer>
       </div>
-      <div class="popup" data-popup="popup-form" data-close-overlay>
-        <div class="popup__wrapper" data-close-overlay>
-          <div class="popup__content popup__content--size-full popup__content--theme-white">
-            <div class="popup__inner">
-              <div class="popup__form">
-                <button type="button" class="js-popup-close btn-close btn-close--theme-black popup__btn-close">
-                  <svg class="u-icon btn-close__icon">
-                    <use xlink:href="images/icons/icons.svg#close"></use>
-                  </svg>
-                  <span class="btn-close__title">Закрыть</span>
-                </button>
-                <div class="row popup__form-row">
-                  <div class="popup__form-col popup__form-col--title row__col--3">
-                    <div class="title-size-1 popup__form-title">Давайте сделаем проект вместе</div>
-                  </div>
-                  <div class="row__col--4 popup__form-col popup__form-col--title">
-                    <form action="#" class="popup__form-el">
-                      <div class="popup__form-el-line">
-                        <p class="popup__form-el-line-title">Услуга</p>
-                        <div class="popup__form-el-control-list">
-                          <div class="popup__form-el-control-list-item">
-                            <label class="u-radio u-radio--size-md u-radio--theme-black">
-                            <span class="u-radio__inner">
-                            <input type="radio" name="form_services" class="u-radio__control" checked="checked" value="Дизайн">
-                            <span class="u-radio__content">
+    </div>
+  </div>
+</section>
+
+        </main>
+      </div>
+      <div class="popup" data-popup="popup-form" data-close-overlay data-lenis-prevent>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content popup__content--size-full popup__content--theme-white">
+      <div class="popup__inner">
+        <div class="popup__form">
+          <button type="button" class="js-popup-close btn-close btn-close--theme-black popup__btn-close">
+            <svg class="u-icon btn-close__icon">
+              <use xlink:href="images/icons/icons.svg#close"></use>
+            </svg>
+            <span class="btn-close__title">Закрыть</span>
+          </button>
+          <div class="row popup__form-row">
+            <div class="popup__form-col popup__form-col--title row__col--3">
+              <div class="title-size-1 popup__form-title">Давайте сделаем проект вместе</div>
+            </div>
+            <div class="row__col--4 popup__form-col popup__form-col--form">
+              <form action="#" class="popup__form-el">
+                <div class="popup__form-el-line">
+                  <p class="popup__form-el-line-title">Услуга</p>
+                  <div class="popup__form-el-control-list">
+                    <div class="popup__form-el-control-list-item">
+                      <label class="u-radio u-radio--size-md u-radio--theme-black">
+                        <span class="u-radio__inner">
+                          <input type="radio" name="form_services" class="u-radio__control" checked="checked" value="Дизайн">
+                          <span class="u-radio__content">
                             <span class="u-radio__title">Дизайн</span>
-                            </span>
-                            </span>
-                            </label>
-                          </div>
-                          <div class="popup__form-el-control-list-item">
-                            <label class="u-radio u-radio--size-md u-radio--theme-black">
-                            <span class="u-radio__inner">
-                            <input type="radio" name="form_services" class="u-radio__control" value="Разработка">
-                            <span class="u-radio__content">
-                            <span class="u-radio__title">Разработка</span>
-                            </span>
-                            </span>
-                            </label>
-                          </div>
-                          <div class="popup__form-el-control-list-item">
-                            <label class="u-radio u-radio--size-md u-radio--theme-black">
-                            <span class="u-radio__inner">
-                            <input type="radio" name="form_services" class="u-radio__control" value="Маркетинг">
-                            <span class="u-radio__content">
-                            <span class="u-radio__title">Маркетинг</span>
-                            </span>
-                            </span>
-                            </label>
-                          </div>
-                          <div class="popup__form-el-control-list-item">
-                            <label class="u-radio u-radio--size-md u-radio--theme-black">
-                            <span class="u-radio__inner">
-                            <input type="radio" name="form_services" class="u-radio__control" value="Промо">
-                            <span class="u-radio__content">
-                            <span class="u-radio__title">Промо</span>
-                            </span>
-                            </span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="popup__form-el-line">
-                        <p class="popup__form-el-line-title">Бюджет</p>
-                        <div class="popup__form-el-control-list">
-                          <div class="popup__form-el-control-list-item">
-                            <label class="u-radio u-radio--size-md u-radio--theme-black">
-                            <span class="u-radio__inner">
-                            <input type="radio" name="form_budget" class="u-radio__control" value="До 100к">
-                            <span class="u-radio__content">
-                            <span class="u-radio__title">До 100к</span>
-                            </span>
-                            </span>
-                            </label>
-                          </div>
-                          <div class="popup__form-el-control-list-item">
-                            <label class="u-radio u-radio--size-md u-radio--theme-black">
-                            <span class="u-radio__inner">
-                            <input type="radio" name="form_budget" class="u-radio__control" checked="checked" value="100к–500к">
-                            <span class="u-radio__content">
-                            <span class="u-radio__title">100к–500к</span>
-                            </span>
-                            </span>
-                            </label>
-                          </div>
-                          <div class="popup__form-el-control-list-item">
-                            <label class="u-radio u-radio--size-md u-radio--theme-black">
-                            <span class="u-radio__inner">
-                            <input type="radio" name="form_budget" class="u-radio__control" value="500к+">
-                            <span class="u-radio__content">
-                            <span class="u-radio__title">500к+</span>
-                            </span>
-                            </span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="popup__form-el-line">
-                        <div class="row popup__form-el-row">
-                          <div class="row__col--4 popup__form-el-col">
-                            <div class="popup__form-el-input u-control">
-                              <input type="text" name="form_name" class="u-control__input u-input u-input--size-md u-input--theme-black u-input--status-error" required placeholder="">
-                              <p class="u-control__placeholder">
-                                <span class="u-control__placeholder-title">Имя</span>
-                              </p>
-                            </div>
-                          </div>
-                          <div class="row__col--4 popup__form-el-col">
-                            <div class="popup__form-el-input u-control">
-                              <input type="email" name="form_email" class="u-control__input u-input u-input--size-md u-input--theme-black" required placeholder="">
-                              <p class="u-control__placeholder">
-                                <span class="u-control__placeholder-title">E-mail</span>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="popup__form-el-line">
-                        <div class="popup__form-el-input u-control">
-                          <textarea name="form_message" cols="" rows="1" class="u-control__input u-input u-input--size-md u-input--theme-black js-textarea-autoresizing u-input--type-textarea" placeholder=""></textarea>
-                          <p class="u-control__placeholder">
-                            <span class="u-control__placeholder-title">Детали проекта (по желанию)</span>
-                          </p>
-                        </div>
-                      </div>
-                      <footer class="popup__form-footer">
-                        <button type="submit" class="btn btn--size-md btn--theme-black popup__form-footer-btn">
-                        <span class="btn__inner">
-                        <span class="btn__title">Отправить</span>
+                          </span>
                         </span>
-                        </button>
-                        <div class="popup__form-footer-privacy">Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных</div>
-                      </footer>
-                    </form>
+                      </label>
+                    </div>
+                    <div class="popup__form-el-control-list-item">
+                      <label class="u-radio u-radio--size-md u-radio--theme-black">
+                        <span class="u-radio__inner">
+                          <input type="radio" name="form_services" class="u-radio__control" value="Разработка">
+                          <span class="u-radio__content">
+                            <span class="u-radio__title">Разработка</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="popup__form-el-control-list-item">
+                      <label class="u-radio u-radio--size-md u-radio--theme-black">
+                        <span class="u-radio__inner">
+                          <input type="radio" name="form_services" class="u-radio__control" value="Маркетинг">
+                          <span class="u-radio__content">
+                            <span class="u-radio__title">Маркетинг</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="popup__form-el-control-list-item">
+                      <label class="u-radio u-radio--size-md u-radio--theme-black">
+                        <span class="u-radio__inner">
+                          <input type="radio" name="form_services" class="u-radio__control" value="Промо">
+                          <span class="u-radio__content">
+                            <span class="u-radio__title">Промо</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
                   </div>
                 </div>
-              </div>
+                <div class="popup__form-el-line">
+                  <p class="popup__form-el-line-title">Бюджет</p>
+                  <div class="popup__form-el-control-list">
+                    <div class="popup__form-el-control-list-item">
+                      <label class="u-radio u-radio--size-md u-radio--theme-black">
+                        <span class="u-radio__inner">
+                          <input type="radio" name="form_budget" class="u-radio__control" value="До 100к">
+                          <span class="u-radio__content">
+                            <span class="u-radio__title">До 100к</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="popup__form-el-control-list-item">
+                      <label class="u-radio u-radio--size-md u-radio--theme-black">
+                        <span class="u-radio__inner">
+                          <input type="radio" name="form_budget" class="u-radio__control" checked="checked" value="100к–500к">
+                          <span class="u-radio__content">
+                            <span class="u-radio__title">100к–500к</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="popup__form-el-control-list-item">
+                      <label class="u-radio u-radio--size-md u-radio--theme-black">
+                        <span class="u-radio__inner">
+                          <input type="radio" name="form_budget" class="u-radio__control" value="500к+">
+                          <span class="u-radio__content">
+                            <span class="u-radio__title">500к+</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="popup__form-el-line">
+                  <div class="row popup__form-el-row">
+                    <div class="row__col--4 popup__form-el-col">
+                      <div class="popup__form-el-input u-control">
+                        <input type="text" name="form_name" class="u-control__input u-input u-input--size-md u-input--theme-black u-input--status-error" required placeholder="">
+                        <p class="u-control__placeholder">
+                          <span class="u-control__placeholder-title">Имя</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row__col--4 popup__form-el-col">
+                      <div class="popup__form-el-input u-control">
+                        <input type="email" name="form_email" class="u-control__input u-input u-input--size-md u-input--theme-black" required placeholder="">
+                        <p class="u-control__placeholder">
+                          <span class="u-control__placeholder-title">E-mail</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="popup__form-el-line">
+                  <div class="popup__form-el-input u-control">
+                    <textarea name="form_message" cols="" rows="1" class="u-control__input u-input u-input--size-md u-input--theme-black js-textarea-autoresizing u-input--type-textarea" placeholder=""></textarea>
+                    <p class="u-control__placeholder">
+                      <span class="u-control__placeholder-title">Детали проекта (по желанию)</span>
+                    </p>
+                  </div>
+                </div>
+                <footer class="popup__form-footer">
+                  <button type="submit" class="btn btn--size-md btn--theme-black popup__form-footer-btn">
+                    <span class="btn__inner">
+                      <span class="btn__title">Отправить</span>
+                    </span>
+                  </button>
+                  <div class="popup__form-footer-privacy">Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных</div>
+                </footer>
+              </form>
             </div>
           </div>
         </div>
       </div>
-      <div class="popup" data-popup="popup-thanks" data-close-overlay>
-        <div class="popup__wrapper" data-close-overlay>
-          <div class="popup__content popup__content--size-full popup__content--theme-white">
-            <div class="popup__inner">
-              <div class="popup__info">
-                <button type="button" class="js-popup-close btn-close btn-close--theme-black popup__btn-close">
-                  <svg class="u-icon btn-close__icon">
-                    <use xlink:href="images/icons/icons.svg#close"></use>
-                  </svg>
-                  <span class="btn-close__title">Закрыть</span>
+    </div>
+  </div>
+</div>
+
+<div class="popup" data-popup="popup-thanks" data-close-overlay data-lenis-prevent>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content popup__content--size-full popup__content--theme-white">
+      <div class="popup__inner">
+        <div class="popup__info">
+          <button type="button" class="js-popup-close btn-close btn-close--theme-black popup__btn-close">
+            <svg class="u-icon btn-close__icon">
+              <use xlink:href="images/icons/icons.svg#close"></use>
+            </svg>
+            <span class="btn-close__title">Закрыть</span>
+          </button>
+          <div class="row popup__info-row">
+            <div class="popup__info-col popup__info-col--title row__col--6">
+              <div class="appeal-block popup__info-appeal">
+                <div class="appeal-block__title title-size-1">Отлично!<br>Ваша заявка отправлена.<br>Мы свяжемся с вами в ближайшее время.</div>
+                <button type="button" class="appeal-block__btn btn-call btn-call--theme-gray js-popup-close">
+                  <span class="btn-call__title">Понятно, закрыть форму</span>
                 </button>
-                <div class="row popup__info-row">
-                  <div class="popup__info-col popup__info-col--title row__col--6">
-                    <div class="title-size-1 popup__info-title">Отлично!<br>Ваша заявка отправлена.<br>Мы свяжемся с вами в ближайшее время.</div>
-                    <button type="button" class="js-popup-close popup__info-close">Понятно, закрыть форму</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="popup" data-popup="popup-error" data-close-overlay>
-        <div class="popup__wrapper" data-close-overlay>
-          <div class="popup__content popup__content--size-full popup__content--theme-white">
-            <div class="popup__inner">
-              <div class="popup__info">
-                <button type="button" class="js-popup-close btn-close btn-close--theme-black popup__btn-close">
-                  <svg class="u-icon btn-close__icon">
-                    <use xlink:href="images/icons/icons.svg#close"></use>
-                  </svg>
-                  <span class="btn-close__title">Закрыть</span>
-                </button>
-                <div class="row popup__info-row">
-                  <div class="popup__info-col popup__info-col--title row__col--6">
-                    <div class="title-size-1 popup__info-title">Кажется, что-то пошло не так...<br>Попробуйте отправить запрос чуть позже.</div>
-                    <button type="button" class="popup__info-close" data-modal="popup-form">Попробовать снова</button>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="js/app.min.js??=v=20240504174818"></script>
+  </div>
+</div>
+
+<div class="popup" data-popup="popup-error" data-close-overlay data-lenis-prevent>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content popup__content--size-full popup__content--theme-white">
+      <div class="popup__inner">
+        <div class="popup__info">
+          <button type="button" class="js-popup-close btn-close btn-close--theme-black popup__btn-close">
+            <svg class="u-icon btn-close__icon">
+              <use xlink:href="images/icons/icons.svg#close"></use>
+            </svg>
+            <span class="btn-close__title">Закрыть</span>
+          </button>
+          <div class="row popup__info-row">
+            <div class="popup__info-col popup__info-col--title row__col--6">
+              <div class="appeal-block popup__info-appeal">
+                <div class="appeal-block__title title-size-1">Кажется, что-то пошло не так...<br>Попробуйте отправить запрос чуть позже.</div>
+                <button type="button" class="appeal-block__btn btn-call btn-call--theme-gray" data-modal="popup-form">
+                  <span class="btn-call__title">Попробовать снова</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <script src="js/app.min.js??=v=20240511164109"></script>
   </body>
 </html>

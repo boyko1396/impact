@@ -1,7 +1,7 @@
 {
-  "name": "Ecvida",
+  "name": "Impact",
   "version": "1.7.5",
-  "description": "html/css Ecvida",
+  "description": "html/css Impact",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
@@ -76,7 +76,5 @@
     "webp-converter": "*2.2.3",
     "webpack": "^5.65.0",
     "webpack-stream": "^7.0.0"
-  },
-  "dependencies": {
   }
 }

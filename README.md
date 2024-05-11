@@ -1,4 +1,4 @@
-# Ecvida html/css
+# Impact html/css
 
 ## To work with this project, follow these commands:
 

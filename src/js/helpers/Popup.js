@@ -18,11 +18,11 @@ class Popup {
 
     if (this.lockPaddingElements) {
       this.lockPaddingElements.forEach((element) => {
-        element.style.paddingRight = isLock ? `${lockPaddingValue}rem` : '0rem';
+        element.style.paddingRight = isLock ? `${lockPaddingValue}px` : '0px';
       });
     }
 
-    this.body.style.paddingRight = isLock ? `${lockPaddingValue}rem` : '0rem';
+    this.body.style.paddingRight = isLock ? `${lockPaddingValue}px` : '0px';
     this.body.classList.toggle('is-lock', isLock);
   }
 }

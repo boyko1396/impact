@@ -22,8 +22,12 @@
 
 /** Common BEM blocks used throughout the project */
 @import 'config/common';
-// @import 'components/popup';
+@import 'components/popup';
 @import 'components/header';
 @import 'components/footer';
+@import 'components/intro';
+@import 'components/agency-section';
+@import 'components/portfolio-section';
+@import 'components/projects-section';
 
 /** Inclusion of styles for individual blocks and sections */

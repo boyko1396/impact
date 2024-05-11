@@ -1,0 +1,26 @@
+.projects-section {
+  padding: var(--rhythm-11) 0 0;
+  &__container {
+  }
+  &__header {
+    &-col {
+      &--title {
+        margin-left: $colWidth1;
+        @media (max-width: $lg) {
+          max-width: 100%;
+          margin-left: 0;
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+  &__title {
+    margin: 0 0 var(--rhythm-8);
+    @media (max-width: $lg) {
+      margin-bottom: var(--rhythm-5);
+    }
+    @media (max-width: $sm) {
+      font-size: var(--fs-1);
+    }
+  }
+}

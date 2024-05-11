@@ -9,20 +9,28 @@
 
 // support webp, identify device
 import BaseHelpers from './helpers/BaseHelpers.js';
-import StickyHeader from './modules/StickyHeader.js';
+import './modules/CheckClipPathSupport.js';
+import './libs/lenis.min.js';
+import { LenisSetup } from './modules/LenisSetup.js';
+import ScrollNavigationHighlight from './modules/ScrollNavigationHighlight.js';
 import HeaderBtnToggle from './modules/HeaderBtnToggle.js';
 import PopupManager from './modules/PopupManager.js';
+import VenueGallery from './modules/VenueGallery.js';
 
 BaseHelpers.checkWebpSupport();
 BaseHelpers.addTouchClass();
 BaseHelpers.addLoadedClass();
 
-// modal init
-new PopupManager();
-
 document.addEventListener('DOMContentLoaded', function() {
-  // header sticky
-  new StickyHeader('.js-header-sticky', 'is-sticky');
+  // lenis scroll page infinite
+  LenisSetup();
+  // nav active anchor
+  const scrollNavHighlight = new ScrollNavigationHighlight();
+  scrollNavHighlight.init();
+  // modal init
+  new PopupManager();
+  // projects card imgs
+  const venueGallery = new VenueGallery();
   // header nav mobile toggle
   const headerBtnToggle = new HeaderBtnToggle();
-});
+})

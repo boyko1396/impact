@@ -1,42 +1,46 @@
 <header class="@@el header">
   <div class="container header__container">
     <div class="row header__inner">
-      <div class="d-lg-block row__col--2 header__col header__col--appeal">
+      <div class="row__col--2 header__col header__col--appeal">
         <div class="header__appeal">
-          <button type="button" class="js-modal-form header__appeal-btn">Обсудить проект</button>
+          <button type="button" class="js-modal-form header__appeal-btn" data-modal="popup-form">Обсудить проект</button>
         </div>
       </div>
       <div class="row__col--3 header__col header__col--nav">
-        <div class="header__dropdown">
-          <nav class="header__nav" role="navigation">
+        <div class="header__dropdown" data-lenis-prevent>
+          <nav class="js-nav header__nav" role="navigation">
             <ul class="header__nav-list">
               <li class="header__nav-item">
-                <a href="#" class="header__nav-link">Контакты</a>
+                <a href="#contacts" class="header__nav-link">Контакты</a>
               </li>
               <li class="header__nav-item">
-                <a href="#" class="header__nav-link">Агентство</a>
+                <a href="#agency" class="header__nav-link">Агентство</a>
               </li>
               <li class="header__nav-item">
-                <a href="#" class="header__nav-link">Проекты</a>
+                <a href="#projects" class="header__nav-link">Проекты</a>
               </li>
             </ul>
           </nav>
-          <div class="header__dropdown-footer">
-            <div class="header__dropdown-contacts">
-              <ul class="header__contacts">
-                <li class="header__contacts-item">
-                  <div class="header__contacts-item-title">Т:</div>
-                  <div class="header__contacts-item-text">
-                    <a href="tel:+79272737276" target="_blank"> +7 (927) 273-72-76</a>
-                  </div>
-                </li>
-                <li class="header__contacts-item">
-                  <div class="header__contacts-item-title">А:</div>
-                  <div class="header__contacts-item-text">Москва, ул. 1-я Фрунзенская, 5, офис 5 </div>
-                </li>
-              </ul>
+          <div class="row header__dropdown-footer">
+            <div class="row__col--4 header__dropdown-footer-col header__dropdown-footer-col--contacts">
+              <div class="header__dropdown-contacts">
+                <ul class="header__contacts">
+                  <li class="header__contacts-item">
+                    <div class="header__contacts-item-title">Т:</div>
+                    <div class="header__contacts-item-text">
+                      <a href="tel:+79272737276" target="_blank"> +7 (927) 273-72-76</a>
+                    </div>
+                  </li>
+                  <li class="header__contacts-item">
+                    <div class="header__contacts-item-title">А:</div>
+                    <div class="header__contacts-item-text">Москва, ул. 1-я Фрунзенская, 5, офис 5 </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <p class="header__dropdown-copyright">© 2024. Impact Agency. Все права защищены.</p>
+            <div class="row__col--4 header__dropdown-footer-col header__dropdown-footer-col--copyright">
+              <p class="header__dropdown-copyright">© 2024. Impact Agency. Все права защищены.</p>
+            </div>
           </div>
         </div>
       </div>
